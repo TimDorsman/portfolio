@@ -1,0 +1,11 @@
+@import './fonts.scss';
+@import './colors.scss';
+@import './typography.scss';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.content {
+	max-width: 1440px;
+	display: block;
+	margin: auto;
+}

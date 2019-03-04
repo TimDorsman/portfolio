@@ -1,0 +1,26 @@
+@import '../../general/colors.scss';
+
+.title {
+	font-size: 98px;
+	// color: $white;
+	margin: 0;
+
+	&Wrapper {
+		display: block;
+		width: fit-content;
+		text-align: center;
+		font-family: 'Fira Sans Extra Condensed', sans-serif;
+		margin: 20px auto;
+	}
+
+	&Text {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 28px;
+		margin: 0 0 10px 0;
+	}
+}
+
+.btn {
+	height: 40px;
+	width: 100px;
+}

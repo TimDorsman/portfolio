@@ -1,0 +1,23 @@
+@import '../../general/colors.scss';
+
+.button {
+	background: #FFF;
+	height: 40px;
+	-webkit-clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
+	position: relative;
+	width: 100px;
+	margin: auto;
+	transition: clip-path .5s linear;
+	&:hover {
+		-webkit-clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
+	}
+	&Text {
+		color: $light-blue;
+		position: absolute;
+		bottom: 0%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}

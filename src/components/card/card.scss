@@ -1,0 +1,67 @@
+@import '../../general/colors.scss';
+
+.card {
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	&Index {
+		position: absolute;
+		font-size: 200px;
+		color: $baby-blue;
+		top: 90px;
+		z-index: 2
+	}
+	
+	&Background {
+		z-index: 3;
+		background: linear-gradient(rgba(1, 218, 188, .6), rgba(69, 216, 255, .6));
+		border-radius: 100%;
+		height: 500px;
+		width: 500px;
+	}
+
+	&Title {
+		font-size: 50px;
+		color: $white;
+		transform: translate(-50%, -50%);
+		position: relative;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+	}
+}
+
+.cardSkills {
+	-webkit-clip-path: polygon(0% 6%, 98% 0, 100% 100%, 0% 94%);
+	clip-path: polygon(0% 6%, 98% 0, 100% 100%, 0% 94%);
+	background: $baby-blue;
+	padding: 25px;
+	width: 280px;
+	position: relative;	
+	margin-left: auto;
+	left: 50%;
+	top: 50%;
+
+	&Header {
+		color: $light-blue;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	&Text {
+		color: $light-blue;
+		font-style: italic;
+	}
+
+	&._about {
+		position: relative;
+		left: 0;
+		align-self: flex-end;
+		margin-left: 0;
+		right: 10px;
+		width: 266px;
+		box-sizing: border-box;
+		clip-path: polygon(2% 0%, 98% 3%, 100% 97%, 0% 100%);
+		left: -40px;
+	}
+}

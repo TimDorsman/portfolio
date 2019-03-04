@@ -1,0 +1,33 @@
+@import './colors.scss';
+
+.button {
+	
+	&Skew {
+		color: $light-blue;
+		background: green;
+		padding: 5px 20px;
+		width: fit-content;
+	}
+}
+
+.btn {
+	color: #fff;
+	background: #0079c1;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	border: 0;
+	outline: 0;
+	font-size: 1.1rem;
+	padding: 12px;
+	display: inline-block;
+	transform: skew(-5deg, -10deg);
+	&:visited { color: #fff; }
+	&:hover { background: #0069a8; }
+	& > span { display: inline-block; transform: skew(21deg, 20deg); } /* Un-skew the text */
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
