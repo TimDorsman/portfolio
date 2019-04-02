@@ -4,12 +4,16 @@ import './slidernavigation.scss';
 
 
 export default class SliderNavigation extends Component {
+
+
 	selectOption(e) {
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
 		console.log(activeOptions);
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
 
 		e.target.classList.add('sliderNavigationButtonActive');
+
+		this.props.onClick()
 	}
 
 	render() {
