@@ -19,10 +19,23 @@
 	}
 
 }
+
 .about {
-	&__section {
+	overflow: hidden;
+	&Section {
 		display: flex;
 		flex-direction: row;
 		position: relative;
+	}
+
+	&Image {
+		width: 500px;
+		object-fit: cover;
+		object-position: -200px;
+		height: 500px;
+		border-radius: 100%;
+		position: relative;
+		right: -50px;
+		top: calc(50vh - 250px);
 	}
 }

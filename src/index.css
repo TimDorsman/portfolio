@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: hotpink;
+  background: linear-gradient(to top, #01dabc, #45d8ff);
 }
 
 code {

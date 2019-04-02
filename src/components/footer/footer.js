@@ -7,7 +7,7 @@ export default class Footer extends Component {
 			<div className='footer'>
 				<a href='www.linked.com/tdorsman'>
 					<div>
-						<i className='fa-github' />
+						<i className='faGitHub' />
 					</div>
 				</a>
 			</div>

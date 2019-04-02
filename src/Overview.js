@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import UserInfo from './components/userinfo/userinfo';
-import OrderList from './components/orderlist/orderlist';
-import './sass/Overview.scss';
 import Button from './components/button/button';
 
 export default class Overview extends Component {
@@ -27,8 +24,6 @@ export default class Overview extends Component {
     render() {
         return (
             <div className='overview'>
-                <UserInfo data={this.state.userinfo} />
-                <OrderList data={this.state.orderlist} />
                 <div className='overviewBottom'>
                     <h4 className='overviewTotal'>Total: €{this.state.total}</h4>
                     <Button class='buttonPrimary' classLink='mg-left' link='/checkout/payment'>To payment</Button>
