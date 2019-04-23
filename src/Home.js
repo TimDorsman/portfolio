@@ -37,7 +37,7 @@ export default class Home extends Component {
 				})}
 				<ul className='sliderNavigation'>
 				{Projects.map(function(project, i) {
-					return <SliderNavigation index={i + 1} key={i} onClick={() => this.selectCard} />
+					return <SliderNavigation index={i + 1} key={i} selectCard={() => this.selectCard} />
 				})}
 				</ul>
 			</>

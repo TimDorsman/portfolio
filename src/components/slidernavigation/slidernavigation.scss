@@ -10,6 +10,14 @@
 	margin: 10px auto;
 	width: fit-content;
 
+	&Max {
+		width: 17px;
+		height: 17px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
 	&Item {
 		display: flex;
 		flex-direction: column;
@@ -17,8 +25,9 @@
 		margin: 0 20px;  
 		text-align: center;
 	}
-
+	
 	&Button {
+		box-sizing: border-box;
 		margin: 0;
 		border: 3px $light-blue solid;
 		border-radius: 100%;
