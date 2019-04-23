@@ -21,7 +21,12 @@ export default class Home extends Component {
 	}
 
 	selectCard(index) {
-		console.log('test');
+		SliderItems.forEach((item, i) => {
+			item.classList.add('cardHide');
+			if(index == i) {
+				SliderItems[index].classList.remove('cardHide');
+			}
+		})
 	}
 
 	componentDidMount() {
