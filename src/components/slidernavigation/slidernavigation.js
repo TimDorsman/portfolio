@@ -1,30 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './slidernavigation.scss';
 
 
 
-export default class SliderNavigation extends Component {
+export default function SliderNavigation (props) {
 
-
-	selectOption(e) {
+	function selectOption (e) {
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
-		console.log(activeOptions);
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
 
 		e.target.classList.add('sliderNavigationButtonActive');
 	}
 
-	render() {
-		return (
-			<li className='sliderNavigationItem'>
-			<div className='sliderNavigationMax' onClick={this.props.selectCard}>
-				<div 
-					className={`sliderNavigationButton ${this.props.index === 1 ? 'sliderNavigationButtonActive' : ''}`} 
-					onClick={(e) => this.selectOption(e)}
-				/>
-			</div>
-			<span>{this.props.index < 10 ? `0${this.props.index}` : this.props.index}</span>
-			</li>
-		)
-	}
+	return (
+		<li className='sliderNavigationItem'>
+		<div className='sliderNavigationMax' onClick={props.selectCard}>
+			<div 
+				className={`sliderNavigationButton ${props.index === 1 ? 'sliderNavigationButtonActive' : ''}`} 
+				onClick={selectOption}
+			/>
+		</div>
+		<span>{props.index < 10 ? `0${props.index}` : props.index}</span>
+		</li>
+	)
 }

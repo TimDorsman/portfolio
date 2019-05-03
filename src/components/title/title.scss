@@ -1,4 +1,5 @@
 @import '../../general/colors.scss';
+@import '../../sass/main.scss';
 
 .title {
 	font-size: 98px;
@@ -14,6 +15,10 @@
 
 		&About {
 			margin-top: 166px;
+
+			@include for-desktop {
+
+			}
 		}
 	}
 
