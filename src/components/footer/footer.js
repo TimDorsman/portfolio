@@ -6,8 +6,13 @@ export default class Footer extends Component {
 		return (
 			<div className='footer'>
 				<a href='www.linked.com/tdorsman'>
-					<div>
+					<div className='footerItem'>
 						<i className='faGitHub' />
+					</div>
+				</a>
+				<a href='www.linked.com/tdorsman'>
+					<div className='footerItem'>
+						<i className='faLinkedIn' />
 					</div>
 				</a>
 			</div>

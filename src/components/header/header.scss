@@ -1,16 +1,133 @@
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
 .header {
 	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	background-color: $light-blue;
-	margin: 0;
-	justify-content: flex-end;
-	padding: 15px  54px 15px 5px;
-	font-size: 14px;
+	align-items: center;
+	padding: 10px;
+
+	&Toggle {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		position: relative;
+		height: 30px;
+		
+		&.open {
+			height: 6px;
+		}
+
+		@include for-phone {
+			display: none;
+		}
+
+		&Container {
+			height: 30px;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&List {
+		display: none;
+		flex-direction: column;
+		padding-right: 0;
+
+		@include for-phone {
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+			background-color: $light-blue;
+			margin: 0;
+			justify-content: flex-end;
+			padding: 15px  0px 15px 5px;
+			font-size: 14px;
+			margin-left: auto;
+		}
+
+		&.open {
+			display: flex;
+			position: absolute;
+			top: 30px;
+			padding: 0;
+			height: 100vh;
+			left: 0;
+			width: 100vw;
+			z-index: 2;
+			background: linear-gradient(to top, #01dabc, #45d8ff);
+			list-style-type: none;
+		}
+	}
 
 	&Item {
-		margin: 0 10px;
+		height: 40px;
+		width: 100px;
+		
+		@include for-mobile-only {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 22px auto;
+			background: #FFF;
+			-webkit-clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
+			position: relative;
+			transition: clip-path .5s linear;
+
+			&:first-child {
+				margin-top: 120px;
+			}
+
+			a {
+				color: $tranquility;
+			}
+		}
+
+
+		&:hover {
+			-webkit-clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
+		}
+	}
+
+	&Line {
+		height: 2px;
+		width: 36px;
+		background-color: $white;
+		position: relative;
+
+		&Top {
+			transition: top .5s ease-in, transform .2s ease-in;
+
+			&.open {
+				transform: rotate(405deg);
+				top: 4px;
+			}
+		}
+		
+		&Middle {
+			transition: opacity .1s ease-in, transform .2s ease-in;
+			&.open {
+				transform: rotate(360deg);
+				opacity: 0;
+			}
+		}
+
+		&Bottom {
+			transition: top .5s ease-in, transform .2s ease-in;
+			&.open {
+				transform: rotate(315deg);
+				top: 0;
+			}
+		}
+	}
+
+	&Name {
+		display: block;
+		margin: 0 auto;
+		padding-left: 36px;
+		@include Text(31px, bold, center, $white, $firesans);
+		@include for-phone {
+			display: none;
+		}
 	}
 }

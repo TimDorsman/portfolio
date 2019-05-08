@@ -1,5 +1,4 @@
-@import '../../general/colors.scss';
-@import '../../general/typography.scss';
+@import '../../general/main.scss';
 
 .about-section {
 	background: #FFF;
@@ -9,7 +8,7 @@
 	&__title {
 		margin-top: 0;
 
-		@include fontFiraSansExtraCondensed(27px, $coal, bold);
+		@include Text(27px, bold, center, $coal, $firesans);
 	}
 
 	&__description {
