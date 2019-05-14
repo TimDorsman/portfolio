@@ -1,4 +1,4 @@
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
 .social {
 	background: $light-blue;
@@ -6,6 +6,12 @@
 	height: 50px;
 	padding: 10px;
 	border-radius: 100%;
+	display: none;
+
+	@include for-desktop {
+		display: inline-block;
+		margin: auto;
+	}
 
 	&Icon {
 	}

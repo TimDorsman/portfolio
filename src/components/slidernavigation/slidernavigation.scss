@@ -1,44 +1,58 @@
 
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
-.sliderNavigation {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 0;
-	margin: 10px auto;
-	width: fit-content;
+.slider {
+	&Container {
+		margin-top: 80%;
 
-	&Max {
-		width: 17px;
-		height: 17px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include for-desktop {
+			margin-top: 60%;
+		}
 	}
-	
-	&Item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 0 20px;  
-		text-align: center;
-	}
-	
-	&Button {
-		box-sizing: border-box;
-		margin: 0;
-		border: 3px $light-blue solid;
-		border-radius: 100%;
-		width: 2px;
-		height: 2px;
-		background: $baby-blue;
 
-		&Active {
-			border: 2px $light-blue solid;
+	&Navigation {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0;
+		margin: 60px auto;
+		width: fit-content;
+
+		@include for-desktop {
+			margin: 10px auto;
+		}
+
+		&Max {
 			width: 17px;
 			height: 17px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		&Item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 20px;  
+			text-align: center;
+		}
+		
+		&Button {
+			box-sizing: border-box;
+			margin: 0;
+			border: 3px $light-blue solid;
+			border-radius: 100%;
+			width: 2px;
+			height: 2px;
+			background: $baby-blue;
+
+			&Active {
+				border: 2px $light-blue solid;
+				width: 17px;
+				height: 17px;
+			}
 		}
 	}
 }

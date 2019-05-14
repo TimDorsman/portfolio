@@ -12,11 +12,16 @@
 		font-family: 'Fira Sans Extra Condensed', sans-serif;
 		margin: 20px auto;
 
+		@include for-desktop {
+			margin-top: 150px;
+		}
+
 		&About {
 			margin-top: 166px;
+			display: none;
 
 			@include for-desktop {
-
+				display: block;
 			}
 		}
 	}

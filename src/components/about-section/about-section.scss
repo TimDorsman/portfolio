@@ -2,8 +2,14 @@
 
 .about-section {
 	background: #FFF;
-	padding: 67px 60px 35px;
-	width: 308px;
+	padding: 67px 30px 180px;
+	width: 97vw;
+	box-sizing: border-box;
+
+	@include for-desktop {
+		width: 308px;
+		padding: 67px 60px 35px;
+	}
 
 	&__title {
 		margin-top: 0;
@@ -21,20 +27,38 @@
 
 .about {
 	overflow: hidden;
+
 	&Section {
 		display: flex;
-		flex-direction: row;
 		position: relative;
+		flex-direction: column;
+
+		@include for-desktop {
+			flex-direction: row-reverse;
+		}
 	}
 
 	&Image {
-		width: 500px;
+		position: relative;
+		height: 380px;
+		width: 380px;
 		object-fit: cover;
 		object-position: -200px;
-		height: 500px;
 		border-radius: 100%;
-		position: relative;
-		right: -50px;
-		top: calc(50vh - 250px);
+		top: 40px;
+		border: 10px solid $tranquility;
+		right: -20px;
+		z-index: 2;
+		margin-left: auto;
+
+		@include for-phone {
+			object-position: -170px;
+		}
+		
+		@include for-desktop {
+			top: calc(50vh - 250px);
+			width: 500px;
+			height: 500px;
+		}
 	}
 }

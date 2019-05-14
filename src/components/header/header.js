@@ -17,13 +17,14 @@ export default class Header extends Component {
 	}
 
 	render() {
+		console.log(this.props);
 		return (
 			<div className='header'>
 				<span className='headerName'>Tim</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><a href="/">HOME</a></li>
-					<li className='headerItem'><a href="/about">ABOUT</a></li>
-					<li className='headerItem'><a href="/portfolio">PORTFOLIO</a></li>
+					<li className='headerItem'><a href="/">home</a></li>
+					<li className='headerItem'><a href="/about">about</a></li>
+					<li className='headerItem'><a href="/project/1">Project</a></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

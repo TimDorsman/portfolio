@@ -52,7 +52,7 @@
 			height: 100vh;
 			left: 0;
 			width: 100vw;
-			z-index: 2;
+			z-index: 10;
 			background: linear-gradient(to top, #01dabc, #45d8ff);
 			list-style-type: none;
 		}
@@ -61,6 +61,7 @@
 	&Item {
 		height: 40px;
 		width: 100px;
+		text-transform: uppercase;
 		
 		@include for-mobile-only {
 			display: flex;

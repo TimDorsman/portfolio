@@ -1,31 +1,46 @@
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
 .card {
-	width: 500px;
-	height: 500px;
 	border-radius: 100%;
 	position: relative;
+	width: 260px;
+	height: 260px;
+	
+	@include for-desktop {
+		width: 500px;
+		height: 500px;
+	}
 
 	&Index {
 		position: absolute;
-		font-size: 200px;
+		font-size: 112px;
 		color: $baby-blue;
 		margin: 0;
 		z-index: 0;
 		left: 0;
-		top: -100px;
+		top: -40px;
+
+		@include for-desktop {
+			top: -100px;
+			font-size: 200px;
+		}
 	}
 
 	&Background {
 		z-index: 3;
 		border-radius: 100%;
-		height: 500px;
-		width: 500px;
+		height: 260px;
+		width: 260px;
 		background-size: cover;
+		
+		@include for-desktop {
+			height: 500px;
+			width: 500px;
+		}
 	}
 
 	&Title {
-		font-size: 50px;
+		font-size: 30px;
 		color: $white;
 		transform: translate(-50%, -50%);
 		position: relative;
@@ -33,6 +48,10 @@
 		left: 50%;
 		text-align: center;
 		width: 50%;
+
+		@include for-desktop {
+			font-size: 50px;
+		}
 	}
 }
 
@@ -40,9 +59,14 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
-	height: 650px;
-	width: 650px;
 	margin: auto;
+	width: 260px;
+	height: 260px;
+	
+	@include for-desktop {
+		height: 650px;
+		width: 650px;
+	}
 }
 
 .cardProject.cardHide {
@@ -50,17 +74,21 @@
 }
 
 .cardSkills {
+	display: none;
 	-webkit-clip-path: polygon(0% 6%, 98% 0, 100% 100%, 0% 94%);
 	clip-path: polygon(0% 6%, 98% 0, 100% 100%, 0% 94%);
 	background: $baby-blue;
 	padding: 25px;
-	width: 280px;
 	position: relative;	
 	margin-left: auto;
 	left: 50%;
 	top: 50%;
-	display: flex;
 	flex-direction: column;
+	
+	@include for-tablet {
+		width: 280px;
+		display: flex;
+	}
 
 	&Header {
 		color: $light-blue;
@@ -75,15 +103,24 @@
 	}
 
 	&._about {
+		display: block;
 		position: relative;
 		left: 0;
+		top: -120px;
 		align-self: flex-end;
 		margin-left: 0;
-		right: 10px;
-		width: 266px;
+		right: 0;
+		width: 88vw;
 		box-sizing: border-box;
 		clip-path: polygon(2% 0%, 98% 3%, 100% 97%, 0% 100%);
-		left: -40px;
+
+		@include for-phone {
+			width: 400px;
+		}
+		
+		@include for-desktop {
+			width: 266px;
+		}
 	}
 
 	&._projects {

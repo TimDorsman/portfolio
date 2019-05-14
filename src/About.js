@@ -10,10 +10,12 @@ class About extends Component {
 		return (
 			<div className="about">
 				<div className="aboutSection">
-					<AboutSection />
-					<Skills classes='_about' title='my skills'>React, Javascript, PHP, HTML, CSS, Sass, C#, Angular, Gulp, Grunt, React, Javascript, PHP, HTML,CSS, Sass, C#, Angular, Gulp, Grunt</Skills>
-					<Title job='FRONT END DEVELOPER' btntext='X' className='titleWrapperAbout'>Tim</Title>
 					<img src={Tim} alt='Tim' className='aboutImage'/>
+					<Title job='FRONT END DEVELOPER' btntext='X' className='titleWrapperAbout'>Tim</Title>
+					<div className='aboutMe'>
+						<AboutSection />
+						<Skills classes='_about' title='my skills'>React, Javascript, PHP, HTML, CSS, Sass, C#, Angular, Gulp, Grunt, React, Javascript, PHP, HTML,CSS, Sass, C#, Angular, Gulp, Grunt</Skills>
+					</div>
 				</div>
 			</div>
 		);
