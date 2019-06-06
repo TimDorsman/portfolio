@@ -8,8 +8,7 @@ export default function SliderNavigation (props) {
 	function selectOption (e) {
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
-
-		e.target.classList.add('sliderNavigationButtonActive');
+		e.currentTarget.classList.add('sliderNavigationButtonActive');
 	}
 
 	return (

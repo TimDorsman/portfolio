@@ -1,0 +1,79 @@
+@import '../../general/main.scss';
+
+.project {
+	&Information {
+		padding: 10px;
+		background: $white;
+		max-width: 90vw;
+		box-sizing: border-box;
+		margin: auto;
+		position: relative;
+		padding: 20px 24px;
+
+		.Information {
+			&Title {
+				@include Text(22px, 800, left, $light-blue, 'Open Sans');
+				margin: 5px 0;
+			}
+
+			&Desc {
+				@include Text(16px, normal, left, $light-blue, 'Open Sans');
+				margin: 5px 0 20px;
+			}
+		}
+
+		.Title {
+			@include Text(23px, bold, left, $coal, 'Open Sans');
+			margin-top: 50px;
+		}
+		
+		.Description {
+			@include Text(16px, normal, left, $coal, 'Open Sans');
+			line-height: 21px;
+			text-align: justify;
+		}
+	}
+
+	&Icons {
+		margin-top: 60vh;
+		display: flex;
+		justify-content: flex-end;
+		max-width: 90vw;
+		margin: 80vh auto 10px;
+	}
+
+	&Icon {
+		width: 100%;
+		height: auto;
+
+		&Background {
+			margin-left: 10px;
+			background-color: $white;
+			display: inline-flex;
+			padding: 10px;
+			border-radius: 100%;
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box;
+		}
+	}
+
+	&Title {
+
+		margin: auto;
+		position: absolute;
+		width: 50vw;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		top: 50vh;
+		left: 50vw;
+	}
+	
+	&Background {
+		height: 100vh;
+		background-image: url('https://bit.ly/2HtS6KS');
+		background-size: cover;
+		background-position: center;
+	}
+}

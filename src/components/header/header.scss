@@ -1,5 +1,19 @@
 @import '../../general/main.scss';
 
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content {
+	max-width: 1440px;
+	display: block;
+	margin: auto;
+}
+
+.no-scroll-y {
+	overflow-y: hidden;
+}
+
 .header {
 	display: flex;
 	align-items: center;

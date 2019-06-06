@@ -25,16 +25,8 @@ const updateUserAction = {
 	}
 };
 
-const addUserAction = {
-	type: 'addUser',
-	payload: {
-		
-	}
-}
-
 store.dispatch(updateUserAction);
 
-console.log(store.getState())
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

@@ -30,6 +30,12 @@
 		font-family: 'Open Sans', sans-serif;
 		font-size: 28px;
 		margin: 0 0 10px 0;
+		padding: 0 30px;
+		font-size: 22px;
+
+		@include for-tablet {
+			padding: 0;
+		}
 	}
 }
 

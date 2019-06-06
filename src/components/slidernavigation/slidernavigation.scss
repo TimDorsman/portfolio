@@ -3,7 +3,7 @@
 
 .slider {
 	&Container {
-		margin-top: 80%;
+		margin-top: 80vh;
 
 		@include for-desktop {
 			margin-top: 60%;
@@ -18,6 +18,7 @@
 		padding: 0;
 		margin: 60px auto;
 		width: fit-content;
+		flex-wrap: wrap;
 
 		@include for-desktop {
 			margin: 10px auto;

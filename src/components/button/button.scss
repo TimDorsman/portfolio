@@ -19,5 +19,26 @@
 		bottom: 0%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+
+		&.roundButton {
+			position: static;
+			transform: none;
+		}
+	}
+
+	&.roundButton {
+		border-radius: 100%;
+		width: 68px;
+		height: 68px;
+		clip-path: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.NextProject {
+		position: absolute;
+		top: 20px;
+		z-index: 2;
 	}
 }

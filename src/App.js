@@ -4,9 +4,6 @@ import RouteURL from './components/route/route'
 import './sass/main.scss';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-//Redux
-import { connect } from 'react-redux';
-import { removeUser, addUser } from './actions/user-actions';
 
 //Library
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,21 +13,22 @@ import { faIgloo, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-ic
 library.add(faIgloo, faShoppingCart, faTimes)
 
 class App extends Component {
-	constructor(props) {
-		super(props);
 
-		this.onAddUser = this.onAddUser.bind(this);
+	componentDidMount() {
+		console.log('Run!')
 	}
-	
-	onAddUser(e) {
-		this.props.onAddUser(e.target.value);
-	}
-
 	render() {
+		let currentUrl = window.location.pathname;
+		currentUrl = currentUrl.substr(0, currentUrl.lastIndexOf("/"))
+
+		console.log(currentUrl);
+
+
 		return (
 			<Router>
 				<div className="App">
-					<Header />
+
+					{currentUrl !== '/project' && <Header /> }
 					<div className="content">
 					<RouteURL />
 					</div>
@@ -41,12 +39,4 @@ class App extends Component {
 	}
 }
 
-const mapStateToProps = state => ({
-	user: state.user,
-	users: state.users
-})
-
-const mapActionsToProps = {
-	onAddUser: addUser
-};
-export default connect(mapStateToProps, mapActionsToProps) (App);
+export default App;

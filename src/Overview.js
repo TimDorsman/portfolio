@@ -26,7 +26,7 @@ export default class Overview extends Component {
             <div className='overview'>
                 <div className='overviewBottom'>
                     <h4 className='overviewTotal'>Total: €{this.state.total}</h4>
-                    <Button class='buttonPrimary' classLink='mg-left' link='/checkout/payment'>To payment</Button>
+                    <Button className='buttonPrimary' classLink='mg-left' link='/checkout/payment'>To payment</Button>
                 </div>
             </div>
         )

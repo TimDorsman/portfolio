@@ -13,13 +13,11 @@ export default class Home extends Component {
 	}
 
 	displayCard() {
-		console.log('waat');
-		const SliderItems = document.querySelectorAll('.cardProject')
+		const SliderItems = document.querySelectorAll('.cardProject');
 		SliderItems.forEach((item, i) => {
 			item.classList.add('cardHide');
 			if(i === 0) {
 				item.classList.remove('cardHide');
-				console.log(item);
 			}
 		})
 	}
@@ -28,7 +26,6 @@ export default class Home extends Component {
 		const SliderItems = document.querySelectorAll('.cardProject')
 		SliderItems.forEach((item, i) => {
 			item.classList.add('cardHide');
-			console.log(index, i);
 			if(index === i) {
 				SliderItems[index].classList.remove('cardHide');
 			}
@@ -40,7 +37,6 @@ export default class Home extends Component {
 	}
 
 	selectOption = (e) => {
-		console.log(e);
 		const event = e;
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
