@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
 import RouteURL from './components/route/route'
 import './sass/main.scss';
+import {withRouter} from 'react-router';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
@@ -10,33 +10,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo, faShoppingCart, faTimes)
+library.add(faIgloo, faShoppingCart, faTimes);
 
-class App extends Component {
+const App = ({location}) => (
+	<div className="App">
+		{console.log('Path', location.pathname.replace(/^\/([^\/]*).*$/, '$1'))}
+		{location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== 'project' && <Header name={location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== '' && 'Tim'} /> }
+		<div className="content">
+		{console.log(location)}
+		<RouteURL />
+		</div>
+		<Footer />
+	</div>
+)
 
-	componentDidMount() {
-		console.log('Run!')
-	}
-	render() {
-		let currentUrl = window.location.pathname;
-		currentUrl = currentUrl.substr(0, currentUrl.lastIndexOf("/"))
-
-		console.log(currentUrl);
-
-
-		return (
-			<Router>
-				<div className="App">
-
-					{currentUrl !== '/project' && <Header /> }
-					<div className="content">
-					<RouteURL />
-					</div>
-					<Footer />
-				</div>
-			</Router>
-		);
-	}
-}
-
-export default App;
+export default withRouter(App);

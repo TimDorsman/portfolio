@@ -29,7 +29,7 @@ export default class Header extends Component {
 
 		return (
 			<div className='header'>
-				<span className='headerName'>Tim</span>
+				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
 					<li className='headerItem'><a href="/">home</a></li>
 					<li className='headerItem'><a href="/about">about</a></li>

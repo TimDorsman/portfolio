@@ -8,6 +8,7 @@ export const Projects = [
         client: 'Competa',
         startDate: '10-10-2017',
         endDate: '25-06-2018',
+        images: ['beer.png', 'olifant.jpg', 'lorem.jpg']
     },
     {
     id: 2,
@@ -17,7 +18,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Webpack, JavaScript, VueJS',
         client: 'Competa',
         startDate: '28-12-2017',
-        endDate: '25-07-2018'
+        endDate: '25-07-2018',
+        images: ['beer.jpg', 'gorilla.jpg', 'gorilla.jpg']
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['test.png', 'project.jpg', 'lorem.jpg']
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['beer.png', 'project.jpg', 'lorem.jpg']
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['test.png', 'project.jpg', 'lorem.jpg']
     },
     {
         id: 6,
@@ -57,7 +62,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['test.png', 'project.jpg', 'lorem.jpg']
     },
     {
         id: 7,
@@ -67,7 +73,8 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['test.png', 'project.jpg', 'lorem.jpg']
     },
     {
         id: 8,
@@ -77,6 +84,7 @@ export const Projects = [
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
-        endDate: '23-06-2018'
+        endDate: '23-06-2018',
+        images: ['test.png', 'project.jpg', 'lorem.jpg']
     },
 ]
