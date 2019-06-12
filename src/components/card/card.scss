@@ -4,8 +4,7 @@
 	border-radius: 100%;
 	position: relative;
 	width: 260px;
-	height: 260px;
-	
+
 	@include for-desktop {
 		width: 500px;
 		height: 500px;
@@ -61,8 +60,7 @@
 	position: relative;
 	margin: auto;
 	width: 260px;
-	height: 260px;
-	
+
 	@include for-desktop {
 		height: 650px;
 		width: 650px;

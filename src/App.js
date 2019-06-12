@@ -14,13 +14,11 @@ library.add(faIgloo, faShoppingCart, faTimes);
 
 const App = ({location}) => (
 	<div className="App">
-		{console.log('Path', location.pathname.replace(/^\/([^\/]*).*$/, '$1'))}
 		{location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== 'project' && <Header name={location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== '' && 'Tim'} /> }
 		<div className="content">
-		{console.log(location)}
 		<RouteURL />
 		</div>
-		<Footer />
+		{ location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== 'project' && <Footer /> }
 	</div>
 )
 

@@ -3,7 +3,6 @@ import './projectintro.scss';
 
 function ProjectIntro (props) {
 	const { client, title, startDate, skills, description, images } = props.data;
-	console.log(images);
 	return <div className="projectInformation">
 			<h4 className="InformationTitle">Client</h4>
 			<p className="InformationDesc">{client}</p>

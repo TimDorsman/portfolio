@@ -6,12 +6,21 @@ import { Projects } from './mockData';
 
 export default (props) => {
 	const { projectId } = props.match.params;
-	const image = Projects[projectId].image;
-	const nextImage = Projects[parseInt(projectId) + 1].image;
+	let nextImage;
+	let image;
 
 	if(Projects[projectId] === undefined) {
 		window.location.href = '/error';
 	}
+
+	if(Projects[parseInt(projectId) + 1] !== undefined) {
+		nextImage = Projects[parseInt(projectId) + 1].image;
+	}
+	image = Projects[projectId].image;
+
+	const body = document.querySelector('.body');
+	body.classList.remove('no-scroll-y');
+
 	return (
 		<>
 		<div className='project' style={{height: '100%'}}>
@@ -31,7 +40,7 @@ export default (props) => {
 				{Projects[projectId].images.map((picture, i) => {
 					return <img src={require(`./images/${picture}`)} className={`InformationImage InformationImage${i % 2 === 0 ? 'Even' : 'Odd'}`} alt="pew" key={i}/>
 				})}
-				{Projects[parseInt(projectId) + 1] !== undefined && <NextProject nextNumber={projectId} nextTitle={Projects[parseInt(projectId) + 1].title } style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${nextImage}`)}')` }} />}
+				{Projects[parseInt(projectId) + 1] !== undefined && <div className='invisibleWall'><NextProject nextNumber={projectId} nextTitle={Projects[parseInt(projectId) + 1].title } style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${nextImage}`)}')` }} /></div>}
 		</div>
 		</>
 	)

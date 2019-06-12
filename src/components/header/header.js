@@ -15,13 +15,13 @@ export default class Header extends Component {
 		this.setState((state) => {
 			return { navOpen: !state.navOpen }
 		})
+
+		console.log('work!')
 	}
 	componentDidUpdate() {
 		const body = document.querySelector('.body');
-		console.log(body);
 	
 		this.state.navOpen ? body.classList.add('no-scroll-y') : body.classList.remove('no-scroll-y');
-
 		window.scroll(0,0);
 	}
 
@@ -31,9 +31,9 @@ export default class Header extends Component {
 			<div className='header'>
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><a href="/">home</a></li>
-					<li className='headerItem'><a href="/about">about</a></li>
-					<li className='headerItem'><Link to={"/project/1"}>Project</Link></li>
+					<li className='headerItem'><Link to="/" onClick={this.toggleNav}>Home</Link></li>
+					<li className='headerItem'><Link to="/project/0" onClick={this.toggleNav}>Project</Link></li>
+					<li className='headerItem'><Link to="/about" onClick={this.toggleNav}>About</Link></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

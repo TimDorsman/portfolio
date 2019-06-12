@@ -62,10 +62,14 @@
 	width: 260px;
 	right: -55px;
 	bottom: -40px;
-	margin-top: 50px;
-	
+
 	@include for-desktop {
 		height: 650px;
 		width: 650px;
 	}
+}
+
+.invisibleWall {
+	width: 100%;
+	overflow: hidden;
 }

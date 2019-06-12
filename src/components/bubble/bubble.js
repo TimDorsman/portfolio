@@ -17,7 +17,7 @@ export default class Bubble extends Component {
 			styling: {
 				backgroundImage: `url(${require(`./../../images/${this.props.data.image}`)})`,
 			}
-		}, console.log(this.state.data))
+		})
 	}
 
 	render() {

@@ -56,12 +56,15 @@
 		display: flex;
 		justify-content: flex-end;
 		max-width: 90vw;
-		margin: 72vh auto 10px;
+		position: absolute;
+		right: 18px;
+		bottom: 66px;
 	}
 
 	&Icon {
 		width: 100%;
 		height: auto;
+		fill: red !important;
 
 		&Background {
 			margin-left: 10px;
