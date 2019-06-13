@@ -8,7 +8,7 @@ export default class Title extends Component {
 			<div className={`titleWrapper ${this.props.className}`}>
 				<h1 className='title'>{this.props.children}</h1>
 				<p className='titleText'>{this.props.job}</p>
-				<Button link='/about'>{this.props.btntext}</Button>
+				<Button className='buttonHome' link='/about'>{this.props.btntext}</Button>
 				{this.props.buttontext}
 			</div>
 		)

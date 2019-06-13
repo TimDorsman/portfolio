@@ -4,6 +4,10 @@ import Button from './components/button/button';
 import NextProject from './components/nextproject/nextproject';
 import { Projects } from './mockData';
 
+function copyUrl() {
+	console.log('copy!');
+}
+
 export default (props) => {
 	const { projectId } = props.match.params;
 	let nextImage;
@@ -27,14 +31,7 @@ export default (props) => {
 			<div className='projectBackground' style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${image}`)}')` }}>
 				<Button className='roundButton' link='/'>X</Button>
 				<h2 className='projectTitle'>{Projects[projectId].title}</h2>
-				<div className="projectIcons">
-					<div className="projectIconBackground">
-						<img src={require('./images/link.svg')} className="projectIcon" alt=""/>
-					</div>
-					<div className="projectIconBackground">
-						<img src={require('./images/github.png')} className="projectIcon" alt=""/>
-					</div>
-				</div>
+
 			</div>
 				<ProjectIntro data={Projects[projectId]}/>
 				{Projects[projectId].images.map((picture, i) => {

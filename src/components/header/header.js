@@ -15,9 +15,11 @@ export default class Header extends Component {
 		this.setState((state) => {
 			return { navOpen: !state.navOpen }
 		})
-
-		console.log('work!')
 	}
+
+	f() {
+	}
+
 	componentDidUpdate() {
 		const body = document.querySelector('.body');
 	
@@ -31,9 +33,9 @@ export default class Header extends Component {
 			<div className='header'>
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><Link to="/" onClick={this.toggleNav}>Home</Link></li>
-					<li className='headerItem'><Link to="/project/0" onClick={this.toggleNav}>Project</Link></li>
-					<li className='headerItem'><Link to="/about" onClick={this.toggleNav}>About</Link></li>
+					<li className='headerItem'><Link to="/" onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
+					<li className='headerItem'><Link to="/project/0" onClick={this.state.navOpen ? this.toggleNav : this.f()}>Project</Link></li>
+					<li className='headerItem'><Link to="/about" onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

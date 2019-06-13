@@ -12,13 +12,31 @@ import { faIgloo, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-ic
 
 library.add(faIgloo, faShoppingCart, faTimes);
 
+function forHeader(path) {
+	let h = path.replace(/^\/([^\/]*).*$/, '$1');
+
+	if(h !== 'project')
+		return true
+	else 
+		return false;
+}
+
+function forFooter(path) {
+	let h = path.replace(/^\/([^\/]*).*$/, '$1');
+
+	if(h !== 'project' && h !== 'about')
+		return true;
+	else
+		return false;
+}
+
 const App = ({location}) => (
 	<div className="App">
-		{location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== 'project' && <Header name={location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== '' && 'Tim'} /> }
-		<div className="content">
+		{ forHeader(location.pathname) && <Header name={location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== '' && 'Tim'} /> }
+		<div className={`content ${!forFooter(location.pathname) ? 'no-footer' : ''}`}>
 		<RouteURL />
 		</div>
-		{ location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== 'project' && <Footer /> }
+		{ forFooter(location.pathname) && <Footer /> }
 	</div>
 )
 

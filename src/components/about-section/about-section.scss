@@ -7,20 +7,46 @@
 	box-sizing: border-box;
 
 	@include for-desktop {
-		width: 308px;
+		min-height: calc(100vh - 131px);
+		position: relative;
+	}
+
+	@include for-desktop {
+		width: auto;
 		padding: 67px 60px 35px;
+	}
+
+	&__social {
+		display: none;
+		position: absolute;
+		bottom: 35px;
+		width: 100%;
+		left: 0;
+		justify-content: center;
+
+		@include for-desktop {
+			display: flex;
+		}
 	}
 
 	&__title {
 		margin-top: 0;
 
 		@include Text(27px, bold, center, $coal, $firesans);
+
+		@include for-desktop {
+			width: 300px;
+		}
 	}
 
 	&__description {
 		font-size: 16px;
 		color:  $coal;
 		text-align: justify;
+
+		@include for-desktop {
+			max-width: 300px;
+		}
 	}
 
 }
@@ -51,14 +77,23 @@
 		z-index: 2;
 		margin-left: auto;
 
-		@include for-phone {
-			object-position: -170px;
-		}
-		
+
 		@include for-desktop {
+			object-position: -270px;
 			top: calc(50vh - 250px);
 			width: 500px;
 			height: 500px;
+			right: -100px;
+		}
+	}
+
+	&Me {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		@include for-desktop {
+			flex-direction: row;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
 .button {
 	background: #FFF;
@@ -9,10 +9,16 @@
 	width: 100px;
 	margin: auto;
 	transition: clip-path .5s linear;
+
 	&:hover {
 		-webkit-clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
 		clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
 	}
+
+	&Home {
+		margin: 20px auto 0;
+	}
+
 	&Text {
 		color: $light-blue;
 		position: absolute;
@@ -40,5 +46,10 @@
 		position: absolute;
 		top: 20px;
 		z-index: 2;
+
+		@include for-desktop {
+			top: 100px;
+			left: 40px;
+		}
 	}
 }

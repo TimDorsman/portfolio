@@ -12,29 +12,45 @@
 		margin: auto;
 		position: relative;
 		padding: 20px 24px;
-		margin-top: -60px;
+		margin-top: -100px;
+		max-width: 980px;
 
+		@include for-desktop {
+			padding: 28px 50px 56px;
+		}
+
+		
+		
 		.Information {
+
+			&Box {
+				margin-right: 84px;
+			}
+
 			&Title {
 				@include Text(22px, 800, left, $light-blue, 'Open Sans');
 				margin: 5px 0;
+
+				@include for-desktop {
+					font-size: 16px;
+				}
 			}
 
 			&Desc {
 				@include Text(16px, normal, left, $light-blue, 'Open Sans');
 				margin: 5px 0 20px;
+
+				@include for-desktop {
+					font-size: 16px;
+				}
 			}
 
-			&Image {
-				width: 290px;
-				height: auto;
-	
-				&Odd {
-					margin-left: auto;
-				}
-	
-				&Even {
-					margin-right: auto;
+			&Wrapper {
+				display: flex;
+				flex-direction: column;
+
+				@include for-desktop {
+					flex-direction: row;
 				}
 			}
 		}
@@ -52,13 +68,12 @@
 	}
 
 	&Icons {
-		margin-top: 60vh;
 		display: flex;
 		justify-content: flex-end;
-		max-width: 90vw;
 		position: absolute;
-		right: 18px;
-		bottom: 66px;
+		right: 0;
+		max-width: 90vw;
+		top: -47px;
 	}
 
 	&Icon {
@@ -87,6 +102,10 @@
 		margin: auto;
 		top: 50vh;
 		left: 50vw;
+
+		@include for-desktop {
+			font-size: 50px;
+		}
 	}
 	
 	&Background {
@@ -100,16 +119,31 @@
 .Information {
 	&Image {
 		display: block;
-		width: 290px;
+		min-width: 290px;
+		width: 70%;
 		height: auto;
 		margin: 50px 0;
 
+		@include for-desktop {
+			max-width: 980px;
+			width: 70%;
+			margin: 68px 0 0;
+		}
+
 		&Odd {
 			margin-left: auto;
+
+			@include for-desktop {
+				margin-right: 67px;
+			}
 		}
 
 		&Even {
 			margin-right: auto;
+
+			@include for-desktop {
+				margin-left: 67px;
+			}
 		}
 	}
 }
