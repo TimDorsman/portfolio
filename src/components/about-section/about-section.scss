@@ -7,25 +7,26 @@
 	box-sizing: border-box;
 
 	@include for-desktop {
-		min-height: calc(100vh - 131px);
+		min-height: 600px;
+		height: calc(100vh - 131px);
 		position: relative;
-	}
-
-	@include for-desktop {
+		display: flex;
+		flex-direction: column;
 		width: auto;
 		padding: 67px 60px 35px;
 	}
 
 	&__social {
 		display: none;
-		position: absolute;
 		bottom: 35px;
+		margin-top: 100%;
 		width: 100%;
 		left: 0;
 		justify-content: center;
 
 		@include for-desktop {
 			display: flex;
+			margin-top: auto;
 		}
 	}
 
@@ -80,7 +81,7 @@
 
 		@include for-desktop {
 			object-position: -270px;
-			top: calc(50vh - 250px);
+			top: 10vh;
 			width: 500px;
 			height: 500px;
 			right: -100px;

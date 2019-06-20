@@ -76,6 +76,7 @@ body {
 		height: auto;
 		width: 100px;
 		text-transform: uppercase;
+		padding: 10px 0;
 		
 		@include for-mobile-only {
 			display: flex;

@@ -1,10 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './social.scss';
 
 export default function Social(props) {
 	return (
 		<a href={props.link} className='social'>
-			<img src={props.image} className='socialIcon' alt='social media' />
+			<FontAwesomeIcon icon={props.faIcon}/>
 		</a>
 	)
 }

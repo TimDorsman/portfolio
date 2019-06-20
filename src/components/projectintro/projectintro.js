@@ -1,16 +1,18 @@
 import React from 'react';
 import './projectintro.scss';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import * as Icons from '@fortawesome/free-solid-svg-icons';
+import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import Social from '../../components/social/social';
+
+library.add(Icons.faLink)
 
 function ProjectIntro (props) {
 	const { client, title, startDate, skills, description, images } = props.data;
 	return <div className="projectInformation">
 			<div className="projectIcons">
-				<div className="projectIconBackground">
-					<img src={require('../../images/link.svg')} className="projectIcon" alt=""/>
-				</div>
-				<div className="projectIconBackground">
-					<img src={require('../../images/github.png')} className="projectIcon" alt=""/>
-				</div>
+					<Social faIcon={faGithubAlt} link='www.github.com/TimDorsman' />
+					<Social faIcon={Icons.faLink} />
 			</div>
 			<div className="InformationWrapper">
 				<div className="InformationBox">

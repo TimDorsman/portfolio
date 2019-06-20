@@ -22,8 +22,13 @@ export default class Header extends Component {
 
 	componentDidUpdate() {
 		const body = document.querySelector('.body');
+		const footer = document.querySelector('.footer');
 	
 		this.state.navOpen ? body.classList.add('no-scroll-y') : body.classList.remove('no-scroll-y');
+
+		if(footer)
+		this.state.navOpen ? footer.classList.add('footerNav') : footer.classList.remove('footerNav');
+
 		window.scroll(0,0);
 	}
 
@@ -33,9 +38,9 @@ export default class Header extends Component {
 			<div className='header'>
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><Link to="/" onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
-					<li className='headerItem'><Link to="/project/0" onClick={this.state.navOpen ? this.toggleNav : this.f()}>Project</Link></li>
-					<li className='headerItem'><Link to="/about" onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>
+					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
+					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Project</Link></li>
+					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

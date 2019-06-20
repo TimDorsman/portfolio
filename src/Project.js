@@ -1,8 +1,9 @@
 import React from 'react';
 import ProjectIntro from './components/projectintro/projectintro';
-import Button from './components/button/button';
+import { Link } from 'react-router-dom';
 import NextProject from './components/nextproject/nextproject';
 import { Projects } from './mockData';
+import closeImg from './images/close.svg';
 
 function copyUrl() {
 	console.log('copy!');
@@ -29,7 +30,13 @@ export default (props) => {
 		<>
 		<div className='project' style={{height: '100%'}}>
 			<div className='projectBackground' style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${image}`)}')` }}>
-				<Button className='roundButton' link='/'>X</Button>
+				<div className="projectHidden">
+					<div className='projectClose'>
+						<Link to='/'>
+							<img src={closeImg} alt='close icon' className='projectCloseImage'/>
+						</Link>
+					</div>
+				</div>
 				<h2 className='projectTitle'>{Projects[projectId].title}</h2>
 
 			</div>

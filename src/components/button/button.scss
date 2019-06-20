@@ -7,12 +7,38 @@
 	clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
 	position: relative;
 	width: 100px;
-	margin: auto;
 	transition: clip-path .5s linear;
 
 	&:hover {
 		-webkit-clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
 		clip-path: polygon(0 0, 100% 13%, 86% 100%, 0% 100%);
+	}
+
+	&Link {
+		display: inline-block;
+		margin: auto;
+
+		&.roundButton {
+			border-radius: 100%;
+			width: 68px;
+			height: 68px;
+			clip-path: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&.NextProject {
+			position: absolute;
+			top: 20px;
+			z-index: 2;
+			left: 0;
+	
+			@include for-desktop {
+				top: 100px;
+				left: 40px;
+			}
+		}
 	}
 
 	&Home {
@@ -29,27 +55,6 @@
 		&.roundButton {
 			position: static;
 			transform: none;
-		}
-	}
-
-	&.roundButton {
-		border-radius: 100%;
-		width: 68px;
-		height: 68px;
-		clip-path: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	&.NextProject {
-		position: absolute;
-		top: 20px;
-		z-index: 2;
-
-		@include for-desktop {
-			top: 100px;
-			left: 40px;
 		}
 	}
 }
