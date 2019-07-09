@@ -5,10 +5,6 @@ import NextProject from './components/nextproject/nextproject';
 import { Projects } from './mockData';
 import closeImg from './images/close.svg';
 
-function copyUrl() {
-	console.log('copy!');
-}
-
 export default (props) => {
 	const { projectId } = props.match.params;
 	let nextImage;
@@ -31,11 +27,25 @@ export default (props) => {
 		<div className='project' style={{height: '100%'}}>
 			<div className='projectBackground' style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${image}`)}')` }}>
 				<div className="projectHidden">
+					{ Projects[parseInt(projectId) - 1] !== undefined &&
+						<Link to={`./${parseInt(projectId) - 1}`}>
+							<div className="navigationPrev">
+								<img src={require('./images/pijl.svg')} className='navigationPrevArrow' alt='arrowleft'/>
+								<p className='navigationPrevText'>PREV</p>
+							</div> 
+						</Link> }
 					<div className='projectClose'>
 						<Link to='/'>
 							<img src={closeImg} alt='close icon' className='projectCloseImage'/>
 						</Link>
 					</div>
+					{Projects[parseInt(projectId) + 1] !== undefined &&
+					<Link to={`./${parseInt(projectId) + 1}`}>
+						<div className="navigationNext">
+							<p className='navigationNextText'>NEXT</p>
+							<img src={require('./images/pijl.svg')} className='navigationNextArrow' alt='arrowleft'/>
+						</div>
+					</Link>}
 				</div>
 				<h2 className='projectTitle'>{Projects[projectId].title}</h2>
 
