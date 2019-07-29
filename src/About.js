@@ -11,7 +11,7 @@ class About extends Component {
 			<div className="about">
 				<div className="aboutSection">
 					<img src={Tim} alt='Tim' className='aboutImage'/>
-					<Title job='FRONT END DEVELOPER' btntext='X' className='titleWrapperAbout'>Tim</Title>
+					<Title job='FRONT END DEVELOPER' btntext='X' link='/' className='titleWrapperAbout'>Tim</Title>
 					<div className='aboutMe'>
 						<AboutSection />
 						<Skills classes='_about' title='my skills'>React, Javascript, PHP, HTML, CSS, Sass, C#, Angular, Gulp, Grunt, React, Javascript, PHP, HTML,CSS, Sass, C#, Angular, Gulp, Grunt</Skills>

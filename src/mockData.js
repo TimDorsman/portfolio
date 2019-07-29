@@ -1,28 +1,6 @@
 export const Projects = [
     {
-        id: 7,
-        title: 'Rubrics',
-        description: `Rubrics is een project van een basisschool om op een efficiente manier en leuke manier de gevens van kinderen kunnen bekijken en of invullen`,
-        image: 'TimDorsman.jpg',
-        skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
-        client: 'Competa',
-        startDate: '25-05-2017',
-        endDate: '23-06-2018',
-        images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
-    },
-    {
         id: 0,
-        title: 'FTSF Webshop CMS',
-        image: 'TimDorsman.jpg',
-        description: `Na de ontwikkeling van de webshop voor de Fair Trade Software Foundation heb ik i.s.m. verschillende Scrumteams gewerkt aan een custom CMS om hierin bestellingen te bekijken, af te handelen en te verwerken. Binnen mijn werkzaamheden vooral met Vue.js en SCSS gewerkt om het overzicht van alle orders op de juiste manier te stylen, functioneel te maken en te koppelen aan API's. Daarnaast heb ik verschillende componenten gemaakt voor text velden, buttons en text/image combinaties.`,
-        skills: 'HTML(5) | CSS(3) | JAVASCRIPT VUEJS | VUETIFY | WEBPACK | SASS/SCSS | BEM | LARAVEL | PHP',
-        client: 'Competa',
-        startDate: '10-10-2017',
-        endDate: '25-06-2018',
-        images: ['beer.jpg', 'olifant.jpg', 'lorem.jpg']
-    },
-    {
-    id: 1,
         title: 'FTSF Webshop Webshop',
         image: 'TimDorsman.jpg',
         description: `De Fair Trade Software Foundation wilde merchandise gaan aanbieden en heeft ons verzocht een webshop te ontwikkelen. Als Front-end developer hier voornamelijk veel bezig geweest met de vertaling van design naar werkbare templates met HTML, BEM, Sass/SCSS en heb ik verschillende componenten met JavaScript interactief gemaakt. Denk hierbij aan slideshow, winkelwagen, formulieren. De website is geheel responsive en browser compatible opgeleverd waarbij de gebruiksvriendelijkheid op mobile extra aandacht kreeg.`,
@@ -30,7 +8,18 @@ export const Projects = [
         client: 'Competa',
         startDate: '28-12-2017',
         endDate: '25-07-2018',
-        images: ['beer.jpg', 'gorilla.jpg', 'gorilla.jpg']
+        images: ['ftsf-webshop/Webshop_About.jpg', 'ftsf-webshop/Webshop_Billing.png', 'ftsf-webshop/Webshop_ProductOverview.jpg']
+    },
+    {
+        id: 1,
+        title: 'FTSF Webshop CMS',
+        image: 'TimDorsman.jpg',
+        description: `Na de ontwikkeling van de webshop voor de Fair Trade Software Foundation heb ik i.s.m. verschillende Scrumteams gewerkt aan een custom CMS om hierin bestellingen te bekijken, af te handelen en te verwerken. Binnen mijn werkzaamheden vooral met Vue.js en SCSS gewerkt om het overzicht van alle orders op de juiste manier te stylen, functioneel te maken en te koppelen aan API's. Daarnaast heb ik verschillende componenten gemaakt voor text velden, buttons en text/image combinaties.`,
+        skills: 'HTML(5) | CSS(3) | JAVASCRIPT VUEJS | VUETIFY | WEBPACK | SASS/SCSS | BEM | LARAVEL | PHP',
+        client: 'Competa',
+        startDate: '10-10-2017',
+        endDate: '25-06-2018',
+        images: ['ftsf-admin/CMS-dashboard.jpg', 'ftsf-admin/CMS-pages.jpg', 'ftsf-admin/CMS-products.jpg']
     },
     {
         id: 2,
@@ -52,7 +41,7 @@ export const Projects = [
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['beer.jpg', 'gorilla.jpg', 'lorem.jpg']
+        images: ['ods/ODS-Single-Apartment.jpg', 'ods/ODS-Apartment-slider.jpg', 'ods/ODS-Apartments.jpg']
     },
     {
         id: 4,
@@ -87,4 +76,15 @@ export const Projects = [
         endDate: '02/2019',
         images: ['patta.jpg', 'travis.jpg', 'wotherspoon.jpg']
     },
+    {
+        id: 7,
+        title: 'Rubrics',
+        description: `Rubrics is een project van een basisschool om op een efficiente manier en leuke manier de gevens van kinderen kunnen bekijken en of invullen`,
+        image: 'TimDorsman.jpg',
+        skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
+        client: 'Competa',
+        startDate: '25-05-2017',
+        endDate: '23-06-2018',
+        images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
+    }
 ]

@@ -2,13 +2,13 @@ import React from 'react';
 import './projectintro.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import * as Icons from '@fortawesome/free-solid-svg-icons';
-import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import Social from '../../components/social/social';
 
 library.add(Icons.faLink)
 
 function ProjectIntro (props) {
-	const { client, title, startDate, skills, description, images } = props.data;
+	const { client, title, startDate, skills, description } = props.data;
 	return <div className="projectInformation">
 			<div className="projectIcons">
 					<Social faIcon={faGithubAlt} link='www.github.com/TimDorsman' />

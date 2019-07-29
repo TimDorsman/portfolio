@@ -1,19 +1,44 @@
 @import '../../general/main.scss';
 
 .social {
-	background: $light-blue;
 	padding: 10px;
 	border-radius: 100%;
-	display: none;
+	margin: 0 8px;
+	background: $white;
+	cursor: pointer;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@include for-desktop {
-		display: inline-block;
-		margin: 0 8px;
+		background: $light-blue;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: $white;
+			border: 1px $light-blue solid;
+			box-sizing: border-box;
+
+			svg {
+				color: $light-blue;
+			}
+		}
 	}
 
 	&Icon {
 		height: 18px;
 		width: 18px;
 		box-sizing: border-box;
+	}
+
+	svg {
+		color: $light-blue;
+
+		@include for-desktop {
+			color: $white;
+		}
 	}
 }

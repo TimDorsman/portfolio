@@ -6,6 +6,7 @@ import './slidernavigation.scss';
 export default function SliderNavigation (props) {
 
 	function selectOption (e) {
+		props.selectCard();
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
 		e.currentTarget.classList.add('sliderNavigationButtonActive');
@@ -13,7 +14,7 @@ export default function SliderNavigation (props) {
 
 	return (
 		<li className='sliderNavigationItem'>
-		<div className='sliderNavigationMax' onClick={props.selectCard}>
+		<div className='sliderNavigationMax'>
 			<div 
 				className={`sliderNavigationButton ${props.index === 1 ? 'sliderNavigationButtonActive' : ''}`} 
 				onClick={selectOption}
