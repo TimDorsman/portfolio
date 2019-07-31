@@ -63,6 +63,11 @@
 	right: -45px;
 	bottom: -55px;
 	position: absolute;
+	transition: transform .5s linear;
+
+	&:hover {
+		transform: scale(1.05, 1.05);	
+	}
 	
 	@include for-desktop {
 		bottom: 0;

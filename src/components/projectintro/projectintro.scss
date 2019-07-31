@@ -113,6 +113,7 @@
 		margin: auto;
 		top: 50vh;
 		left: 50vw;
+		min-width: 250px;
 
 		@include for-desktop {
 			font-size: 50px;
@@ -226,17 +227,21 @@
 
 		&Odd {
 			margin-left: auto;
+			border-right: none;
 
 			@include for-desktop {
 				margin-right: 67px;
+				border-right: 1px solid grey;
 			}
 		}
 
 		&Even {
 			margin-right: auto;
+			border-left: none;
 
 			@include for-desktop {
 				margin-left: 67px;
+				border-left: 1px solid grey;
 			}
 		}
 	}

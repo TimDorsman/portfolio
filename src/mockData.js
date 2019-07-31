@@ -30,7 +30,7 @@ export const Projects = [
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
+        images: ['competa-millman/CM-home.jpg', 'competa-millman/CM-blog.jpg', 'competa-millman/CM-wedo.jpg']
     },
     {
         id: 3,
@@ -52,7 +52,7 @@ export const Projects = [
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
+        images: ['odsa/home.png', 'odsa/house-apartment.jpg', 'odsa/tenants-profile.jpg']
     },
     {
         id: 5,
@@ -74,7 +74,7 @@ export const Projects = [
         client: 'Cloudsuite',
         startDate: '08/2018',
         endDate: '02/2019',
-        images: ['patta.jpg', 'travis.jpg', 'wotherspoon.jpg']
+        images: ['advion/ADVION-home.jpg', 'advion/ADVION-single.png', 'advion/ADVION-list.png']
     },
     {
         id: 7,

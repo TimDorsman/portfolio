@@ -7,12 +7,13 @@ import Social from '../../components/social/social';
 
 library.add(Icons.faLink)
 
+
 function ProjectIntro (props) {
 	const { client, title, startDate, skills, description } = props.data;
 	return <div className="projectInformation">
 			<div className="projectIcons">
-					<Social faIcon={faGithubAlt} link='www.github.com/TimDorsman' />
-					<Social faIcon={Icons.faLink} />
+					<Social faIcon={faGithubAlt} link='www.github.com/TimDorsman'/>
+					<Social faIcon={Icons.faLink} customClass='copy' copyURL url={window.location.href}/>
 			</div>
 			<div className="InformationWrapper">
 				<div className="InformationBox">

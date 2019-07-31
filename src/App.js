@@ -1,6 +1,5 @@
 import React from 'react';
 import RouteURL from './components/route/route'
-import { BrowserRouter } from 'react-router-dom';
 import './sass/main.scss';
 import {withRouter} from 'react-router';
 import Header from './components/header/header';
@@ -21,13 +20,12 @@ function forHeader(path) {
 
 function forFooter(path) {
 	let h = path.replace(/^\/([^/]*).*$/, '$1');
-	console.log(h);
 	return h !== 'project' && h !== 'about';
 }
 
 const App = ({location}) => (
 	<div className="App">
-		{ forHeader(location.pathname) && <Header name={location.pathname.replace(/^\/([^\/]*).*$/, '$1') !== '' && 'Tim'} /> }
+		{ forHeader(location.pathname) && <Header name={location.pathname.replace(/^\/([^/]*).*$/, '$1') !== '' && 'Tim'} /> }
 		<div className={`content ${!forFooter(location.pathname) ? 'no-footer' : ''}`}>
 		<RouteURL />
 		</div>

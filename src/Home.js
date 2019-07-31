@@ -50,7 +50,7 @@ export default class Home extends Component {
 		this.displayCard();
 		return (
 			<>
-				<Title job="FRONT END DEVELOPER" btntext='ABOUT' animated>Tim</Title>
+				<Title link='/about' job="FRONT END DEVELOPER" btntext='ABOUT' animated>Tim</Title>
 				<div className='sliderContainer'>
 					{Projects.map((project, i) => {
 						return <Card index={i + 1} title={project.title} skills={project.skills} key={i} className='cardHide' style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${project.image}`)}')` }} data-id={i}/>

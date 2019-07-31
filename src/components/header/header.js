@@ -39,8 +39,8 @@ export default class Header extends Component {
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
 					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
-					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Project</Link></li>
-					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>
+					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>	
+					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Projects</Link></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

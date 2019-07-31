@@ -42,3 +42,45 @@
 		}
 	}
 }
+
+.copyText {
+	position: fixed;
+	top: 100px;
+	left: -130px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 16px;
+	background: red;
+	padding: 20px;
+	border-radius: 20px;
+	background: rgb(223,22,22);
+	background: linear-gradient(45deg, rgba(223,22,22,1) 0%, rgba(167,0,31,1) 49%);
+	white-space: nowrap;
+	
+	&.animate {
+		animation: swipeLeft 3s ease-in-out;
+	}
+}
+
+@keyframes swipeLeft {
+	0% {
+		left: -130px;
+		display: block;
+		opacity: 0.3;
+	}
+
+	25% {
+		left: 50%;
+		opacity: 0.8;
+	}
+
+	75% {
+		left: 50%;
+		opacity: 0.8
+	}
+
+	100% {
+		left: calc(100vw + 100px);
+		opacity: 0.3;
+	}
+}
