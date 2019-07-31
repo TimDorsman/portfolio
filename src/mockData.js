@@ -88,3 +88,11 @@ export const Projects = [
         images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
     }
 ]
+
+export const aboutData = {
+    title: 'About me',
+    description: `A passionate and inquisitive Front-end Developer with a great interest in JavaScript frameworks and libraries. Specialized in Sass and JavaScript (ES6 +) and also good experience with Vue.js / Vuetify and React.js in combination with Redux and/or MobX.
+    I am a dedicated and motivated developer, I take into account the wishes of the customer and I deliver my code as structured and as much as possible according to the best practices.
+    I like to spend my free time with friends by going to a festival or indoor event and I also like to play games.
+    `
+}

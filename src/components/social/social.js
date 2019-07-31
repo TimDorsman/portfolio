@@ -6,7 +6,6 @@ export default class Social extends Component {
 	state = {
 		isAnimating: false
 	}
-	
 
 	copyURL = (e) => {
 		const input = e.currentTarget.children[1];

@@ -8,8 +8,8 @@ export default class Footer extends Component {
 	render() {
 		return (
 			<div className='footer'>
-					<Social faIcon={faGithubAlt} link='www.linked.com/tdorsman' />							
-					<Social faIcon={faLinkedinIn} link='www.linked.com/tdorsman' />							
+				<Social faIcon={faGithubAlt} link='https://www.github.com/timdorsman' />							
+				<Social faIcon={faLinkedinIn} link='https://www.linkedin.com/in/tim-dorsman/' />							
 			</div>
 		)
 	}
