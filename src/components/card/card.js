@@ -5,8 +5,8 @@ import './card.scss';
 
 export default function Card(props) {
 	return (
-		<a href={`project/${props.index - 1}`}>
-			<div className='cardProject'>
+		<div className='cardProject'>
+			<a href={`project/${props.index - 1}`}>
 				<h1 className='cardIndex'>{props.index < 10 ? 0 : ''}{props.index}</h1>
 				<div className='card'>
 					<div className='cardBackground' style={props.style}>
@@ -14,7 +14,7 @@ export default function Card(props) {
 					</div>
 				</div>
 				<Skills title='my skills' classes='_projects'>{props.skills}</Skills>
-			</div>
-		</a>
+			</a>
+		</div>
 	)
 }
