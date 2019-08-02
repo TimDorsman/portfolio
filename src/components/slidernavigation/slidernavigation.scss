@@ -8,7 +8,7 @@
 		@include for-desktop {
 			box-sizing: border-box;
 			background: #FFF;
-			margin-top: 450px;
+			margin-top: calc(450px + 40vh);
 			padding: 250px 0 20px 0;
 		}
 	}
