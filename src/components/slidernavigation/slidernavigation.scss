@@ -6,7 +6,10 @@
 		margin-top: 80vh;
 
 		@include for-desktop {
-			margin-top: 60%;
+			box-sizing: border-box;
+			background: #FFF;
+			margin-top: 507px;
+			padding: 250px 0 20px 0;
 		}
 	}
 

@@ -3,6 +3,7 @@ import Title from './components/title/title'
 import Card from './components/card/card';
 import SliderNavigation from './components/slidernavigation/slidernavigation';
 import { Projects } from './mockData';
+import Background from './components/background/background';
 
 export default class Home extends Component {
 
@@ -50,6 +51,7 @@ export default class Home extends Component {
 		this.displayCard();
 		return (
 			<>
+				<Background />
 				<Title link='/about' job="FRONT END DEVELOPER" btntext='ABOUT' animated>Tim</Title>
 				<div className='sliderContainer'>
 					{Projects.map((project, i) => {

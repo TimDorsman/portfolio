@@ -1,0 +1,38 @@
+@import '../../general/main.scss';
+
+.background {
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+	}
+
+	.backWave {
+		top: 26px;
+	}
+
+	.middleWave {
+		top: 76px;
+	}
+
+	.frontWave {
+
+	}
+
+	&Overlap {
+		overflow: hidden;
+		height: 1200px;
+
+		@include for-desktop {
+			width: calc(100vw - 17px);
+		}
+	}
+}
+
+.wave {
+	width: 100vw;
+	transform: scale(1.2, 1.2);
+	height: auto;
+}

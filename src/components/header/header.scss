@@ -76,12 +76,17 @@ body {
 		height: auto;
 		width: 100px;
 		text-transform: uppercase;
-
+		padding: 10px 0;
+		
 		@include for-mobile-only {
 			display: flex;
+			justify-content: center;
+			align-items: center;
 			margin: 22px auto;
+			background: #FFF;
 			-webkit-clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
 			clip-path: polygon(4% 11%, 96% 0, 100% 100%, 0% 100%);
+			position: relative;
 			transition: clip-path .5s linear;
 
 			&:first-child {
