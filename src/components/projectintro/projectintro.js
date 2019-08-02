@@ -12,7 +12,7 @@ function ProjectIntro (props) {
 	const { client, title, startDate, skills, description } = props.data;
 	return <div className="projectInformation">
 			<div className="projectIcons">
-					<Social faIcon={faGithubAlt} link='www.github.com/TimDorsman'/>
+					<Social faIcon={faGithubAlt} link='https://www.github.com/TimDorsman'/>
 					<Social faIcon={Icons.faLink} customClass='copy' copyURL url={window.location.href}/>
 			</div>
 			<div className="InformationWrapper">
@@ -25,7 +25,7 @@ function ProjectIntro (props) {
 					<p className="InformationDesc">{startDate}</p>
 				</div>
 				
-				<div className="InformationBox">
+				<div className="InformationBox InformationBoxSkills">
 					<h4 className="InformationTitle">Skills used</h4>
 					<p className="InformationDesc">{skills}</p>
 				</div>

@@ -2,14 +2,14 @@
 
 .title {
 	font-size: 98px;
-	font-family: 'Fira Sans Extra Condensed', sans-serif;	
+	font-family: $firasans;	
 	margin: 0;
 
 	&Wrapper {
 		display: block;
 		width: fit-content;
 		text-align: center;
-		font-family: 'Fira Sans Extra Condensed', sans-serif;
+		font-family: $firasans;
 		margin: 20px auto;
 
 		@include for-desktop {

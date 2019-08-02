@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="398px" viewBox="0 0 1440 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Back wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1536,201 C1330.14583,-4.25490678 1126.91406,-51.5490268 926.304687,59.1176398 C625.390625,225.11764 358.105611,140.346527 260.335937,129.11764 C120,113 26,113 -1.13686838e-13,120.392212 C-1.13686838e-13,120.392212 -1.13686838e-13,209.550688 -1.13686838e-13,387.86764 L1536,397.851563 L1536,201 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.617280506">
+        <g id="Desktop-HD" transform="translate(0.000000, -487.000000)">
+            <g id="Back-wave" transform="translate(-48.000000, 487.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Background" fill-opacity="0.436178" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="Lines" mask="url(#mask-2)" stroke="#FFFFFF" stroke-linecap="square" stroke-width="3">
+                    <g transform="translate(-257.000000, -426.000000)" id="Line-2">
+                        <path d="M0.5,155.5 L1849.44467,709"></path>
+                        <path d="M0.5,215.5 L1849.44467,769"></path>
+                        <path d="M0.5,237.5 L1849.44467,791"></path>
+                        <path d="M0.5,259.5 L1849.44467,813"></path>
+                        <path d="M0.5,280.5 L1849.44467,834"></path>
+                        <path d="M0.5,302.5 L1849.44467,856"></path>
+                        <path d="M0.5,324.5 L1849.44467,878"></path>
+                        <path d="M0.5,346.5 L1849.44467,900"></path>
+                        <path d="M0.5,367.5 L1849.44467,921"></path>
+                        <path d="M0.5,389.5 L1849.44467,943"></path>
+                        <path d="M0.5,411.5 L1849.44467,965"></path>
+                        <path d="M0.5,432.5 L1849.44467,986"></path>
+                        <path d="M0.5,454.5 L1849.44467,1008"></path>
+                        <path d="M0.5,476.5 L1849.44467,1030"></path>
+                        <path d="M0.5,497.5 L1849.44467,1051"></path>
+                        <path d="M0.5,519.5 L1849.44467,1073"></path>
+                        <path d="M0.5,194.5 L1849.44467,748"></path>
+                        <path d="M0.5,174.5 L1849.44467,728"></path>
+                        <path d="M0.5,541.5 L1849.44467,1095"></path>
+                        <path d="M0.5,563.5 L1849.44467,1117"></path>
+                        <path d="M0.5,585.5 L1849.44467,1139"></path>
+                        <path d="M0.5,606.5 L1849.44467,1160"></path>
+                        <path d="M0.5,628.5 L1849.44467,1182"></path>
+                        <path d="M0.5,649.5 L1849.44467,1203"></path>
+                        <path d="M0.5,671.5 L1849.44467,1225"></path>
+                        <path d="M0.5,693.5 L1849.44467,1247"></path>
+                        <path d="M0.5,715.5 L1849.44467,1269"></path>
+                        <path d="M0.5,737.5 L1849.44467,1291"></path>
+                        <path d="M0.5,758.5 L1849.44467,1312"></path>
+                        <path d="M0.5,0.5 L1849.44467,554"></path>
+                        <path d="M0.5,7.5 L1849.44467,561"></path>
+                        <path d="M0.5,15.5 L1849.44467,569"></path>
+                        <path d="M0.5,25.5 L1849.44467,579"></path>
+                        <path d="M0.5,36.5 L1849.44467,590"></path>
+                        <path d="M0.5,48.5 L1849.44467,602"></path>
+                        <path d="M0.5,60.5 L1849.44467,614"></path>
+                        <path d="M0.5,73.5 L1849.44467,627"></path>
+                        <path d="M0.5,88.5 L1849.44467,642"></path>
+                        <path d="M0.5,103.5 L1849.44467,657"></path>
+                        <path d="M0.5,120.5 L1849.44467,674"></path>
+                        <path d="M0.5,138.5 L1849.44467,692"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

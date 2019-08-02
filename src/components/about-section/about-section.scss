@@ -33,7 +33,7 @@
 	&__title {
 		margin-top: 0;
 
-		@include Text(27px, bold, center, $coal, $firesans);
+		@include Text(27px, bold, center, $coal, $firasans);
 
 		@include for-desktop {
 			width: 300px;

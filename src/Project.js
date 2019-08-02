@@ -52,7 +52,7 @@ export default (props) => {
 			</div>
 				<ProjectIntro data={Projects[projectId]}/>
 				{Projects[projectId].images.map((picture, i) => {
-					return <img src={require(`./images/${picture}`)} className={`InformationImage InformationImage${i % 2 === 0 ? 'Even' : 'Odd'}`} alt="pew" key={i}/>
+					return <img src={require(`./images/${picture}`)} className={`InformationImage InformationImage${i % 2 === 0 ? 'Even' : 'Odd'}`} alt={picture} key={i}/>
 				})}
 				{Projects[parseInt(projectId) + 1] !== undefined && <div className='invisibleWall'><NextProject nextNumber={projectId} nextTitle={Projects[parseInt(projectId) + 1].title } style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${nextImage}`)}')` }} /></div>}
 		</div>

@@ -141,7 +141,7 @@ body {
 		display: block;
 		margin: 0 auto;
 		padding-left: 36px;
-		@include Text(31px, bold, center, $white, $firesans);
+		@include Text(31px, bold, center, $white, $firasans);
 		@include for-phone {
 			display: none;
 		}

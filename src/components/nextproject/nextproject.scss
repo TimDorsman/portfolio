@@ -31,6 +31,7 @@
 		height: 260px;
 		width: 260px;
 		background-size: cover;
+		background-position-y: 0;
 		
 		@include for-desktop {
 			height: 450px;

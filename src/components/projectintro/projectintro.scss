@@ -23,7 +23,15 @@
 
 			&Box {
 				@include for-desktop {
-					margin-right: 84px;
+					&:not(:last-child) {
+						margin-right: 60px;
+					}
+				}
+
+				&Skills {
+					@include for-desktop {
+						width: 60%;
+					}
 				}
 			}
 
@@ -162,9 +170,15 @@
 
 	&Background {
 		height: 100vh;
-		background-image: url('https://bit.ly/2HtS6KS');
 		background-size: cover;
-		background-position: center;
+		background-position-y: 0;
+		background-position-x: center;
+
+		@include for-desktop {
+			background-position-x: 0;
+		}
+
+		
 	}
 }
 

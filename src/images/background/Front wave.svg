@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="730px" viewBox="0 0 1440 730" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Front wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.3430009%" y1="39.1366187%" x2="50%" y2="60.8633813%" id="linearGradient-1">
+            <stop stop-color="#82E7F5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="51.813239%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -399.000000)">
+            <g id="Front-wave" transform="translate(-48.000000, 396.000000)">
+                <path d="M0,16 C86,16 300.5625,55.4453125 488.085937,232.015625 C675.609375,408.585938 1035.87736,440.640625 1315.54688,440.640625 C1421.51042,440.640625 1494.99479,429.760417 1536,408 C1536.11458,624 1536.11458,732 1536,732 C1535.88542,732 1023.88542,732 0,732 C0,254.666667 0,16 0,16 Z" id="Background" fill="url(#linearGradient-1)"></path>
+                <g id="Lines" transform="translate(29.000000, 28.000000)" stroke-linecap="square" stroke-width="3">
+                    <path d="M0.5,1.58057851 L96.5195313,1.58057851" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,124.580579 L371.1875,124.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,42.5805785 L222.453125,42.5805785" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,21.5805785 L168.078125,21.5805785" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,63.5805785 L272.085938,63.5805785" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,83.5805785 L305.214844,83.5805785" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,104.580579 L338.003906,104.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,145.580579 L398.9375,145.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,165.580579 L423.179688,165.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,186.580579 L448.230469,186.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,230.580579 L496.75,230.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,253.580579 L531.769531,253.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,278.580579 L572.777344,278.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,303.580579 L623.238281,303.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,330.580579 L690.828125,330.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,357.580579 L784.960938,357.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,386.580579 L933.179688,386.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,446.580579 L1507,446.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,479.580579 L1507,479.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,509.580579 L1507,509.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,207.580579 L463.5,207.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M0.5,415.580579 L1507,415.580579" id="Line" stroke="#3ADDE1"></path>
+                    <path d="M15,543 L774.5,543" id="Line" stroke="#27DCD6"></path>
+                    <path d="M15,575 L298.960938,575" id="Line" stroke="#27DCD6"></path>
+                    <path d="M15,607 L621,607" id="Line" stroke="#21DCD1"></path>
+                    <path d="M15,639 L135,639" id="Line" stroke="#20DBD1"></path>
+                    <path d="M15,703 L75,703" id="Line" stroke="#20DBD1"></path>
+                    <path d="M15,671 L242.757812,671" id="Line" stroke="#20DBD1"></path>
+                </g>
+                <path d="M1536.08358,471.818221 C1536.07567,456.152949 1536.04781,434.880208 1536,408 C1494.99479,429.760417 1421.51042,440.640625 1315.54688,440.640625 C1035.87736,440.640625 675.609375,408.585938 488.085937,232.015625 C300.5625,55.4453125 86,16 0,16 L0,8.52651283e-14 C86,8.52651283e-14 300.5625,39.4453125 488.085937,216.015625 C675.609375,392.585938 1035.87736,424.640625 1315.54688,424.640625 C1421.51042,424.640625 1494.99479,413.760417 1536,392 C1536.06678,429.546875 1536.09464,456.152949 1536.08358,471.818221 Z" id="Outline" fill="#36D9F0"></path>
+            </g>
+        </g>
+    </g>
+</svg>
