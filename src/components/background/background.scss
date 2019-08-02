@@ -4,13 +4,24 @@
 	position: absolute;
 	z-index: 2;
 	overflow: hidden;
+	top: 200px;
+
+	
+	@include for-desktop {
+		top: auto;
+	}
+
+	&About {
+		top: auto;
+		bottom: auto;
+	}
 
 	img {
 		position: absolute;
 	}
 
 	.backWave {
-		top: 26px;
+		top: 36px;
 	}
 
 	.middleWave {
@@ -18,15 +29,23 @@
 	}
 
 	.frontWave {
-
+		top: 50px;
 	}
 
 	&Overlap {
 		overflow: hidden;
-		height: 1200px;
+		width: 100vw;
+		top: 20px;
+		height: 100vh;
+		height: 560px;
 
 		@include for-desktop {
 			width: calc(100vw - 17px);
+			height: 1200px;
+		}
+
+		&About {
+			height: 620px;
 		}
 	}
 }

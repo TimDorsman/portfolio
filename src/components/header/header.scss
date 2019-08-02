@@ -8,6 +8,13 @@ body {
 	display: block;
 	margin: auto;
 	min-height: calc(100vh - 131px);
+	background: rgb(69,216,255);
+	background: linear-gradient(180deg, rgba(69,216,255,1) 35%, rgba(255,255,255,1) 24%);
+
+	@include for-desktop {
+		background: rgb(69,216,255);
+		background: linear-gradient(180deg, rgba(69,216,255,1) 45%, rgba(255,255,255,1) 24%);
+	}
 }
 
 .no-scroll-y {

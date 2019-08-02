@@ -82,6 +82,7 @@
 	left: 50%;
 	top: 50%;
 	flex-direction: column;
+	z-index: 3;
 	
 	@include for-tablet {
 		width: 280px;

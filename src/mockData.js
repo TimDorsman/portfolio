@@ -1,7 +1,7 @@
 export const Projects = [
     {
         id: 0,
-        title: 'FTSF Webshop Webshop',
+        title: 'FTSF Webshop',
         image: 'ftsf-webshop/Webshop_Home.png',
         description: `De Fair Trade Software Foundation wilde merchandise gaan aanbieden en heeft ons verzocht een webshop te ontwikkelen. Als Front-end developer hier voornamelijk veel bezig geweest met de vertaling van design naar werkbare templates met HTML, BEM, Sass/SCSS en heb ik verschillende componenten met JavaScript interactief gemaakt. Denk hierbij aan slideshow, winkelwagen, formulieren. De website is geheel responsive en browser compatible opgeleverd waarbij de gebruiksvriendelijkheid op mobile extra aandacht kreeg.`,
         skills: 'HTML(5) | CSS(3) | JAVASCRIPT | SASS/SCSS | BEM | PHP',

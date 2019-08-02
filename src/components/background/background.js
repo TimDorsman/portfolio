@@ -8,8 +8,8 @@ export default class Background extends Component {
 	constructor() {
 		super();
 		this.state = {
-			width: '',
-			height: ''
+			width: null,
+			height: null
 		}
 	}
 
@@ -18,11 +18,9 @@ export default class Background extends Component {
 		const middleWave = this.refs.middlewave;
 		const frontWave = this.refs.frontwave;
 		const mouseX = ev.clientX;
-		console.log('X:', ev.clientX);
-		console.dir(frontWave);
-		frontWave.style.right = `${-mouseX * 0.03}px`
-		middleWave.style.right =`${mouseX * 0.03}px`
-		backWave.style.right =`${-mouseX * 0.03}px`
+		frontWave.style.right = `${-mouseX * 0.1}px`
+		middleWave.style.right =`${mouseX * 0.08}px`
+		backWave.style.right =`${-mouseX * 0.04}px`
 	}
 
 	updateWindowSize = () => {
@@ -31,7 +29,10 @@ export default class Background extends Component {
 			height: window.innerHeight
 		})
 
-		console.log(this.state.width, this.state.height);
+		this.refs.backwave.style.right = 0;
+		this.refs.middlewave.style.right = 0;
+		this.refs.frontwave.style.right = 0;
+
 	}
 
 	componentDidMount() {
@@ -45,8 +46,8 @@ export default class Background extends Component {
 	
 	render() {
 		return (
-			<div className='background' onMouseMove={this.moveClouds}>
-				<div className='backgroundOverlap'>
+			<div className={`background${this.props.className ? ` background${this.props.className}` : ''}`} onMouseMove={this.moveClouds}>
+				<div className={`backgroundOverlap${this.props.className ? ` backgroundOverlap${this.props.className}` : ''}`}>
 					<img src={Backwave} alt='backwave' className='wave backWave' ref='backwave'/>
 					<img src={Middlewave} alt='middlewave' className='wave middleWave' ref='middlewave'/>
 					<img src={Frontwave} alt='frontwave' className='wave frontWave' ref='frontwave'/>

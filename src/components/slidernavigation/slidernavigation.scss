@@ -3,12 +3,12 @@
 
 .slider {
 	&Container {
-		margin-top: 80vh;
+		margin-top: 55vh;
 
 		@include for-desktop {
 			box-sizing: border-box;
 			background: #FFF;
-			margin-top: 507px;
+			margin-top: 450px;
 			padding: 250px 0 20px 0;
 		}
 	}
@@ -21,7 +21,9 @@
 		padding: 0;
 		margin: 60px auto;
 		width: fit-content;
-		flex-wrap: wrap;
+		flex-wrap: wrap;    
+		margin: auto;
+		padding-bottom: 40px;
 
 		@include for-desktop {
 			margin: 10px auto;
