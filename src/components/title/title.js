@@ -51,7 +51,7 @@ export default class Title extends Component {
 	
 	render() {
 		return (
-			<div className={`titleWrapper ${this.props.className}`}>
+			<div className={`titleWrapper${this.props.className ? ' ' + this.props.className : ''}`}>
 				<h1 className='title'>{this.props.children}</h1>
 				<p className='titleText'>{this.props.animated ? this.state.job : this.props.job}</p>
 				<Button className='buttonHome' link={this.props.link}>{this.props.btntext}</Button>

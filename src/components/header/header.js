@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../button/button';
 import './header.scss';
 
 export default class Header extends Component {
@@ -38,9 +39,9 @@ export default class Header extends Component {
 			<div className='header'>
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
-					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>	
-					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Projects</Link></li>
+					<li className='headerItem'><Button method={this.state.navOpen ? this.toggleNav : null} link='/'>Home</Button></li>
+					<li className='headerItem'><Button method={this.state.navOpen ? this.toggleNav : null} link='/about'>about</Button></li>
+					<li className='headerItem'><Button method={this.state.navOpen ? this.toggleNav : null} link='/project/0'>Projects</Button></li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>
