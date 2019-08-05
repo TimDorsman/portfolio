@@ -22,8 +22,16 @@
 	@media only screen and (min-width: 993px) { @content; }
 }
 
+@mixin for-desktop-small() {
+	@media only screen and (min-width: 1023px) { @content; }
+}
+
 @mixin for-desktop-large() {
 	@media only screen and (min-width: 1201px) { @content; }
+}
+
+@mixin for-desktop-wide() {
+	@media only screen and (min-width: 1401px) { @content; }
 }
 
 @mixin for-IE {
