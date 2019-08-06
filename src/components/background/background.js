@@ -38,15 +38,17 @@ export default class Background extends Component {
 	componentDidMount() {
 		this.updateWindowSize();
 		window.addEventListener('resize', this.updateWindowSize);
+		window.addEventListener('mousemove', this.moveClouds);
 	}
 
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.updateWindowSize)
+		window.removeEventListener('mousemove', this.moveClouds);
 	}
 	
 	render() {
 		return (
-			<div className={`background${this.props.className ? ` background${this.props.className}` : ''}`} onMouseMove={this.moveClouds}>
+			<div className={`background${this.props.className ? ` background${this.props.className}` : ''}`}>
 				<div className={`backgroundOverlap${this.props.className ? ` backgroundOverlap${this.props.className}` : ''}`}>
 					<img src={Backwave} alt='backwave' className='wave backWave' ref='backwave'/>
 					<img src={Middlewave} alt='middlewave' className='wave middleWave' ref='middlewave'/>
