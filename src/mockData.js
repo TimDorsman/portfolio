@@ -80,12 +80,12 @@ export const Projects = [
         id: 7,
         title: 'Rubrics',
         description: `Rubrics is een project van een basisschool om op een efficiente manier en leuke manier de gevens van kinderen kunnen bekijken en of invullen`,
-        image: 'TimDorsman.jpg',
+        image: 'rubrics/home.png',
         skills: 'HTML5, CSS3, SASS, Wordpress, Webpack',
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['test.jpg', 'gorilla.jpg', 'lorem.jpg']
+        images: ['rubrics/home.png', 'rubrics/progress.png', 'rubrics/student_dashboard.png', 'rubrics/student_rubric.png']
     }
 ]
 

@@ -1,4 +1,4 @@
-@import '../../general/colors.scss';
+@import '../../general/main.scss';
 
 .footer {
 	width: 100%;
@@ -18,6 +18,14 @@
 		box-sizing: border-box;
 	}
 
+	&About {
+		display: flex;
+
+		@include for-desktop {
+			display: none;
+		}
+	}
+
 	&Nav {
 		position: absolute;
 		bottom: 0;
@@ -33,6 +41,6 @@
 }
 
 .no-footer {
-	min-height: calc(100vh - 67px);
+	// min-height: calc(100vh - 67px);
 	background: none;
 }

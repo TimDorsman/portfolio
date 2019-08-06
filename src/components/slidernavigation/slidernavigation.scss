@@ -3,17 +3,13 @@
 
 .slider {
 	&Container {
-		margin-top: calc(-200px + 100vw + 5vh);
+		margin-top: calc(-230px + 100vw + 5vh);
 
 		@include for-desktop {
 			box-sizing: border-box;
 			background: #FFF;
-			margin-top: calc(-122px - 100vh + 100vw);
+			margin-top: calc(130px - 100vh + 100vw);
 			padding: 0px 0 20px 0;
-		}
-
-		@include for-desktop-small {
-			padding-top: 240px;
 		}
 		
 		@include for-desktop-wide {

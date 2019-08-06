@@ -84,7 +84,7 @@
 	flex-direction: column;
 	z-index: 3;
 	
-	@include for-tablet {
+	@include for-desktop {
 		width: 280px;
 		display: flex;
 	}

@@ -6,14 +6,30 @@
 	overflow: hidden;
 	top: 200px;
 
-	
 	@include for-desktop {
-		top: auto;
+		top: 420px;
+		right: 0;
+		left: 0;
 	}
 
 	&About {
+		overflow: hidden;
+		bottom: 64px;
 		top: auto;
-		bottom: auto;
+
+		@include for-desktop {
+			overflow: hidden;
+			top: 280px;
+			overflow-x: hidden;
+			height: 100%;
+			bottom: auto;
+			left: 0;
+		}
+		
+		@include for-desktop-wide {
+			top: 440px;
+			height: 59%;
+		}
 	}
 
 	img {
@@ -38,14 +54,27 @@
 		top: 20px;
 		height: 100vh;
 		height: 560px;
-
+		
 		@include for-desktop {
 			width: calc(100vw - 17px);
 			height: 1200px;
 		}
+		
+		@include for-desktop-wide {
+			width: 100vw;
+		}
 
 		&About {
-			height: 620px;
+			bottom: 0;
+			top: auto;
+			height: 260px;
+			overflow: hidden;
+			height: 223px;
+
+			@include for-desktop {
+				overflow: visible;
+				height: auto;
+			}
 		}
 	}
 }

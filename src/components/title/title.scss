@@ -13,16 +13,21 @@
 		margin: 20px auto;
 
 		@include for-desktop {
-			margin-top: 150px;
+			padding-top: 150px;
 		}
 
 		&About {
 			margin-top: 100px;
 			display: none;
 			z-index: 3;
+			padding-top: 0;
 
 			@include for-desktop {
 				display: block;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				top: 30%;
 			}
 		}
 	}

@@ -54,14 +54,21 @@
 }
 
 .about {
+	position: absolute;
 	overflow: hidden;
+	width: 100%;
+	
+	@include for-desktop {
+		height: calc(100% - 87px);
+	}
 
 	&Section {
 		display: flex;
 		position: relative;
 		flex-direction: column;
-
+		
 		@include for-desktop {
+			width: 100%;
 			flex-direction: row-reverse;
 		}
 	}
@@ -79,14 +86,19 @@
 		z-index: 2;
 		margin-left: auto;
 
-
 		@include for-desktop {
-			object-position: -270px;
-			top: 10vh;
+			object-position: -260px;
+			top: 20vh;
 			max-width: 500px;
 			max-height: 500px;
-			width: 30vw;
-			right: -200px;
+			width: 380px;
+			right: -130px;
+		}
+
+		@include for-desktop-wide {
+			right: -100px;
+			width: 60vw;
+			height: 500px;
 		}
 	}
 
