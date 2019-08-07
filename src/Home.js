@@ -30,6 +30,13 @@ export default class Home extends Component {
 		})
 	}
 
+	selectOption (index) {
+		const Options = document.querySelectorAll('.sliderNavigationButton');
+		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
+		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
+		Options[index].classList.add('sliderNavigationButtonActive');
+	}
+
 	selectCard = (index) => {
 		const SliderItems = document.querySelectorAll('.cardProject');
 		SliderItems.forEach((item, i) => {
@@ -54,30 +61,22 @@ export default class Home extends Component {
 
 		if(startX !== endX) {
 			if(startX < endX && endX - startX > 50) {
-				console.log('Swiping right');
 				cIndex = cIndex + 1
 				if(cIndex > navItemLength - 1) {
 					cIndex = 0;
 				}
 				this.selectCard(cIndex);
+				this.selectOption(cIndex);
 			}
 			else if(startX - endX > 50) {
-				console.log('Swiping left');
 				cIndex = cIndex - 1
 				if(cIndex < 0) {
 					cIndex = navItemLength - 1;
 				}
 				this.selectCard(cIndex);
+				this.selectOption(cIndex);
 			}
 		}
-	}
-
-	selectOption = (e) => {
-		const event = e;
-		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
-		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
-		event.currentTarget.classList.add('sliderNavigationButtonActive');
-		console.log(event.currentTarget);
 	}
 
 	render() {
