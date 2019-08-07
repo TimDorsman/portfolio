@@ -5,13 +5,6 @@ import Frontwave from '../../images/background/frontwave.svg';
 import './background.scss';
 
 export default class Background extends Component {
-	constructor() {
-		super();
-		this.state = {
-			width: null,
-			height: null
-		}
-	}
 
 	moveClouds = (ev) => {
 		const backWave = this.refs.backwave;
@@ -24,15 +17,9 @@ export default class Background extends Component {
 	}
 
 	updateWindowSize = () => {
-		this.setState({
-			width: window.innerWidth, 
-			height: window.innerHeight
-		})
-
 		this.refs.backwave.style.right = 0;
 		this.refs.middlewave.style.right = 0;
 		this.refs.frontwave.style.right = 0;
-
 	}
 
 	componentDidMount() {
