@@ -5,6 +5,8 @@ import SliderNavigation from './components/slidernavigation/slidernavigation';
 import { Projects } from './mockData';
 import Background from './components/background/background';
 
+let startX;
+let cIndex = 0;
 export default class Home extends Component {
 
 	constructor(props) {
@@ -12,7 +14,9 @@ export default class Home extends Component {
 		this.displayCard = this.displayCard.bind(this);
 
 		this.state = {
-			nextSlide: false
+			nextSlide: false,
+			startPos: null,
+			endX: null
 		}
 	}
 
@@ -26,8 +30,8 @@ export default class Home extends Component {
 		})
 	}
 
-	selectCard = (index, event) => {
-		const SliderItems = document.querySelectorAll('.cardProject')
+	selectCard = (index) => {
+		const SliderItems = document.querySelectorAll('.cardProject');
 		SliderItems.forEach((item, i) => {
 			item.classList.add('cardHide');
 			if(index === i) {
@@ -40,11 +44,40 @@ export default class Home extends Component {
 		this.displayCard();
 	}
 
+	sliderTouchStart(e) {
+		startX = e.touches[0].clientX;
+	}
+
+	sliderTouchEnd(e) {
+		const endX = e.changedTouches[0].clientX;
+		const navItemLength = document.querySelectorAll('.sliderNavigationItem').length
+
+		if(startX !== endX) {
+			if(startX < endX && endX - startX > 50) {
+				console.log('Swiping right');
+				cIndex = cIndex + 1
+				if(cIndex > navItemLength - 1) {
+					cIndex = 0;
+				}
+				this.selectCard(cIndex);
+			}
+			else if(startX - endX > 50) {
+				console.log('Swiping left');
+				cIndex = cIndex - 1
+				if(cIndex < 0) {
+					cIndex = navItemLength - 1;
+				}
+				this.selectCard(cIndex);
+			}
+		}
+	}
+
 	selectOption = (e) => {
 		const event = e;
 		const activeOptions = document.querySelectorAll('.sliderNavigationButtonActive');
 		activeOptions.forEach(el => el.classList.remove('sliderNavigationButtonActive'))
 		event.currentTarget.classList.add('sliderNavigationButtonActive');
+		console.log(event.currentTarget);
 	}
 
 	render() {
@@ -53,7 +86,7 @@ export default class Home extends Component {
 			<>
 				<Background />
 				<Title link='/about' job="FRONT END DEVELOPER" btntext='ABOUT' animated>Tim</Title>
-				<div className='sliderContainer'>
+				<div className='sliderContainer' onTouchStart={(e) => this.sliderTouchStart(e)} onTouchEnd={(e) => this.sliderTouchEnd(e)}>
 					{Projects.map((project, i) => {
 						return <Card index={i + 1} title={project.title} skills={project.skills} key={i} className='cardHide' style={{backgroundImage: `linear-gradient(rgba(69, 216, 255, .6), rgba(1, 218, 188, .6)), url('${require(`./images/${project.image}`)}')` }} data-id={i}/>
 					})}
