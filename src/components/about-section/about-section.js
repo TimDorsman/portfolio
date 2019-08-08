@@ -13,7 +13,7 @@ export default class AboutSection extends Component {
 				<p className="about-section__description">{aboutData.description}</p>
 				<div className="about-section__social">
 					<Social faIcon={faGithubAlt} link='https://www.github.com/TimDorsman'/>
-					<Social faIcon={faLinkedinIn} link='https://www.linkedin.com/timdorsman'/>
+					<Social faIcon={faLinkedinIn} link='https://www.linkedin.com/in/tim-dorsman/'/>
 				</div>
 			</div>
 		)

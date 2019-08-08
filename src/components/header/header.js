@@ -6,7 +6,8 @@ export default class Header extends Component {
 	constructor (props) {
 		super(props);
 		this.state = {
-			navOpen: false
+			navOpen: false,
+			showAbout: false
 		}
 		this.toggleNav = this.toggleNav.bind(this);
 	}
@@ -17,7 +18,13 @@ export default class Header extends Component {
 		})
 	}
 
-	f() {
+	scrollToSlider = () => {
+		const slider = document.querySelector('.sliderContainer');
+		this.setState({navOpen: false}, () => slider.scrollIntoView({behavior: "smooth", block: "center"}))	
+	}
+
+	showAbout =() => {
+		this.setState({showAbout: true, navOpen: false})
 	}
 
 	componentDidUpdate() {
@@ -38,9 +45,9 @@ export default class Header extends Component {
 			<div className='header'>
 				<span className='headerName'>{this.props.name}</span>
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
-					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Home</Link></li>
-					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : this.f()}>About</Link></li>	
-					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : this.f()}>Projects</Link></li>
+					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : null}>Home</Link></li>
+					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : null}>About</Link></li>	
+					<li className='headerItem' onClick={this.scrollToSlider}>Projects</li>
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

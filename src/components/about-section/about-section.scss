@@ -13,8 +13,9 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		width: auto;
 		padding: 67px 60px 35px;
+		max-width: 600px;
+		width: 25vw;
 	}
 
 	&__social {
@@ -37,7 +38,7 @@
 		@include Text(27px, bold, center, $coal, $firasans);
 
 		@include for-desktop {
-			width: 300px;
+			width: 100%;
 		}
 	}
 
@@ -45,10 +46,6 @@
 		font-size: 16px;
 		color:  $coal;
 		text-align: justify;
-
-		@include for-desktop {
-			max-width: 300px;
-		}
 	}
 
 }

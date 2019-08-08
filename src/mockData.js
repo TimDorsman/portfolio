@@ -25,7 +25,7 @@ export const Projects = [
         id: 2,
         title: 'Competa Millman',
         description: `Voor Competa Millman, een project van Competa in Kenia, heb ik in een Scrum team gewerkt aan de ontwikkeling van de website. Ik heb mij vooral bezig gehouden met de JavaScript componenten zoals een slideshow waarbij veel data op verschillende visuele manieren geanimeerd diende te worden. Daarnaast de styling m.b.v. Sass toegepast.`,
-        image: 'competa-millman/CM-home.jpg',
+        image: 'competa-millman/CM-home-min.jpg',
         skills: 'GULP | HTML(5) | SASS | JAVASCRIPT | WORDPRESS | GIT',
         client: 'Competa',
         startDate: '25-05-2017',

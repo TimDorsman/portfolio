@@ -9,8 +9,8 @@
 		display: block;
 		width: fit-content;
 		text-align: center;
-		font-family: $firasans;
-		margin: 20px auto;
+		font-family: 'Open Sans', sans-serif;
+		margin: auto;
 
 		@include for-desktop {
 			padding-top: 150px;
@@ -27,7 +27,7 @@
 				position: absolute;
 				left: 50%;
 				transform: translate(-50%,-50%);
-				top: 30%;
+				top: 150px;
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 
 .project {
 	height: 100%;
-	background: $white;
+	background: $baby-blue;
 
 	&Information {
 		padding: 10px;
@@ -231,7 +231,6 @@
 		width: 70%;
 		height: auto;
 		margin: 50px 0;
-		border: 1px solid grey;
 
 		@include for-desktop {
 			max-width: 980px;
@@ -245,7 +244,6 @@
 
 			@include for-desktop {
 				margin-right: 67px;
-				border-right: 1px solid grey;
 			}
 		}
 
@@ -255,7 +253,6 @@
 
 			@include for-desktop {
 				margin-left: 67px;
-				border-left: 1px solid grey;
 			}
 		}
 	}
