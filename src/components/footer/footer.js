@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import Social from '../../components/social/social';
 
-import './footer.scss';
-
 export default class Footer extends Component {
 	render() {
 		return (

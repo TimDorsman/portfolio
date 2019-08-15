@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Button from '../../components/button/button'
-import './title.scss';
 
 let i = -1;
 let timeOutID;

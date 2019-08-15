@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Backwave from '../../images/background/backwave.svg';
 import Middlewave from '../../images/background/middlewave.svg';
 import Frontwave from '../../images/background/frontwave.svg';
-import './background.scss';
 
 export default class Background extends Component {
 

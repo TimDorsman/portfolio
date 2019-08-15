@@ -1,6 +1,6 @@
+import './sass/main.scss';
 import React from 'react';
 import RouteURL from './components/route/route'
-import './sass/main.scss';
 import {withRouter} from 'react-router';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';

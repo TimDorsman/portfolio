@@ -3,7 +3,6 @@ import AboutSection from './components/about-section/about-section'
 import Skills from './components/skills/skills';
 import Title from './components/title/title';
 import Tim from './images/TimDorsman.jpg';
-import './sass/main.scss';
 import Background from './components/background/background';
 import Footer from './components/footer/footer';
 

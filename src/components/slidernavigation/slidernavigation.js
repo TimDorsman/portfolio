@@ -1,5 +1,4 @@
 import React from 'react';
-import './slidernavigation.scss';
 
 export default function SliderNavigation (props) {
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './header.scss';
 
 export default class Header extends Component {
 	constructor (props) {
@@ -47,7 +46,8 @@ export default class Header extends Component {
 				<ul className={`headerList${this.state.navOpen ? ' open': ''}`}>
 					<li className='headerItem'><Link to='/' onClick={this.state.navOpen ? this.toggleNav : null}>Home</Link></li>
 					<li className='headerItem'><Link to='/about' onClick={this.state.navOpen ? this.toggleNav : null}>About</Link></li>	
-					<li className='headerItem' onClick={this.scrollToSlider}>Projects</li>
+					<li className='headerItem'><Link to='/project/0' onClick={this.state.navOpen ? this.toggleNav : null}>Projects</Link></li>					
+					{/* <li className='headerItem' onClick={this.scrollToSlider}>Projects</li> */}
 				</ul>
 				<div className='headerToggleContainer' onClick={this.toggleNav}>
 					<div className={`headerToggle ${this.state.navOpen ? 'open' : ''}`}>

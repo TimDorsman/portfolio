@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './skills.scss';
 
 export default class Card extends Component {
 	render() {

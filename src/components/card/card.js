@@ -1,6 +1,5 @@
 import React from 'react';
 import Skills from '../../components/skills/skills'
-import './card.scss';
 
 
 export default function Card(props) {

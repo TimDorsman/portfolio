@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Skills from '../skills/skills';
-import './bubble.scss';
 
 export default class Bubble extends Component {
 	constructor(props) {

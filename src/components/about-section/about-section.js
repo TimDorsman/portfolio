@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Social from '../../components/social/social';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import './about-section.scss';
 import { aboutData } from '../../mockData';
 
 export default class AboutSection extends Component {
