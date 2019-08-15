@@ -2,24 +2,24 @@ export const Projects = [
     {
         id: 0,
         title: 'FTSF Webshop',
-        image: 'ftsf-webshop/Webshop_Home.png',
+        image: 'ftsf-webshop/Webshop_Home-min.png',
         description: `De Fair Trade Software Foundation wilde merchandise gaan aanbieden en heeft ons verzocht een webshop te ontwikkelen. Als Front-end developer hier voornamelijk veel bezig geweest met de vertaling van design naar werkbare templates met HTML, BEM, Sass/SCSS en heb ik verschillende componenten met JavaScript interactief gemaakt. Denk hierbij aan slideshow, winkelwagen, formulieren. De website is geheel responsive en browser compatible opgeleverd waarbij de gebruiksvriendelijkheid op mobile extra aandacht kreeg.`,
         skills: 'HTML(5) | CSS(3) | JAVASCRIPT | SASS/SCSS | BEM | PHP',
         client: 'Competa',
         startDate: '28-12-2017',
         endDate: '25-07-2018',
-        images: ['ftsf-webshop/Webshop_Home.png', 'ftsf-webshop/Webshop_About.jpg', 'ftsf-webshop/Webshop_Billing.png', 'ftsf-webshop/Webshop_ProductOverview.jpg', 'ftsf-webshop/Webshop_New-in-store.jpg']
+        images: ['ftsf-webshop/Webshop_Home-min.png', 'ftsf-webshop/Webshop_About-min.jpg', 'ftsf-webshop/Webshop_Billing-min.png', 'ftsf-webshop/Webshop_ProductOverview-min.jpg', 'ftsf-webshop/Webshop_New-in-store-min.jpg']
     },
     {
         id: 1,
         title: 'FTSF Webshop CMS',
-        image: 'ftsf-admin/CMS-dashboard.jpg',
+        image: 'ftsf-admin/CMS-dashboard-min.jpg',
         description: `Na de ontwikkeling van de webshop voor de Fair Trade Software Foundation heb ik i.s.m. verschillende Scrumteams gewerkt aan een custom CMS om hierin bestellingen te bekijken, af te handelen en te verwerken. Binnen mijn werkzaamheden vooral met Vue.js en SCSS gewerkt om het overzicht van alle orders op de juiste manier te stylen, functioneel te maken en te koppelen aan API's. Daarnaast heb ik verschillende componenten gemaakt voor text velden, buttons en text/image combinaties.`,
         skills: 'HTML(5) | CSS(3) | JAVASCRIPT VUEJS | VUETIFY | WEBPACK | SASS/SCSS | BEM | LARAVEL | PHP',
         client: 'Competa',
         startDate: '10-10-2017',
         endDate: '25-06-2018',
-        images: ['ftsf-admin/CMS-dashboard.jpg', 'ftsf-admin/CMS-pages.jpg', 'ftsf-admin/CMS-products.jpg']
+        images: ['ftsf-admin/CMS-dashboard-min.jpg', 'ftsf-admin/CMS-pages-min.jpg', 'ftsf-admin/CMS-products-min.jpg']
     },
     {
         id: 2,
@@ -30,18 +30,18 @@ export const Projects = [
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['competa-millman/CM-home.jpg', 'competa-millman/CM-blog.jpg', 'competa-millman/CM-wedo.jpg']
+        images: ['competa-millman/CM-home-min.jpg', 'competa-millman/CM-blog-min.jpg', 'competa-millman/CM-wedo-min.jpg']
     },
     {
         id: 3,
         title: 'The Old Dance School',
         description: `Voor "The Old Dance School" een custom WordPress thema gerealiseerd waarbij de eigenaar van de website eenvoudig appartementen kan adverteren en content visueel kan weergeven. Het thema is "from scratch" opgebouwd m.b.v. Webpack, HTML5, Sass en JavaScript (ES6+). Ik ben voornamelijk verantwoordelijk geweest voor het opzetten van de structuur, enkele componenten gemaakt o.a. de appartementen en pagina's volgens design waarbij ze volledig cross-browser en cross-device omgezet zijn. Daarna heb ik samen met andere developers het thema gekoppeld aan WordPress. Voor “The Old Dance School” een custom WordPress thema gerealiseerd waarbij de eigenaar heel eenvoudig appartementen kan adverteren en weergeven. Het project is “from scratch” opgebouwd m.b.v Webpack, HTML5, Sas en JavaScript ES6+) Voornamelijk ben ik verantwoordelijk geweest voor het opzetten en het maken van verschillende componenten, de indeling van het WordPress thema, cross-browser en cross-device.`,
-        image: 'ods/ODS-Single-Apartment.jpg',
+        image: 'ods/ODS-Single-Apartment-min.jpg',
         skills: 'HTML(5) | SASS/SCSS | JAVASCRIPT | GIT | WORDPRESS | WEBPACK',
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['ods/ODS-Single-Apartment.jpg', 'ods/ODS-Apartment-slider.jpg', 'ods/ODS-Apartments.jpg']
+        images: ['ods/ODS-Single-Apartment-min.jpg', 'ods/ODS-Apartment-slider-min.jpg', 'ods/ODS-Apartments-min.jpg']
     },
     {
         id: 4,
@@ -52,7 +52,7 @@ export const Projects = [
         client: 'Competa',
         startDate: '25-05-2017',
         endDate: '23-06-2018',
-        images: ['odsa/home.png', 'odsa/house-apartment.jpg', 'odsa/tenants-profile.jpg']
+        images: ['odsa/home.png', 'odsa/house-apartment-min.jpg', 'odsa/tenants-profile-min.jpg']
     },
     {
         id: 5,
@@ -69,12 +69,12 @@ export const Projects = [
         id: 6,
         title: 'Advion',
         description: `Advion, klant van CloudSuite, is een totaalleverancier binnen de Benelux van voedsel, huishoudelijke- en persoonlijke verzorging. Voor hen heb ik een webshop geheel "from scratch" alleen opgebouwd. Binnen de webshop zaten veel herbruikbare componenten. Om dit gestructureerd en overzichtelijk binnen de stijling te houden heb ik o.a. gebruik gemaakt van de BEM naming convention en verschillende mixins opgezet in Sass. Met JavaScript heb ik vooral animatie en verschillende filter functionaliteiten toegevoegd binnen de shop en daarna de shop gekoppeld aan het custom systeem van CloudSuite d.m.v. Jinja. Tijdens de ontwikkeling verschillende keren i.s.m. de designer de UX geoptimaliseerd om het beste resultaat neer te zetten. De webshop is volledig responsive, cross-browser opgeleverd volgens design.`,
-        image: 'advion/ADVION-home.jpg',
+        image: 'advion/ADVION-home-min.jpg',
         skills: 'HTML | CSS | BOOTSTRAP | JINJA | JIRA | JAVASCRIPT | SASS | GULP | JQUERY | BEM',
         client: 'Cloudsuite',
         startDate: '08/2018',
         endDate: '02/2019',
-        images: ['advion/ADVION-home.jpg', 'advion/ADVION-single.png', 'advion/ADVION-list.png']
+        images: ['advion/ADVION-home-min.jpg', 'advion/ADVION-single.png', 'advion/ADVION-list.png']
     },
     {
         id: 7,
